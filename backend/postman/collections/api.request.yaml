@@ -1,0 +1,18 @@
+info:
+  name: Horizon-Secur API
+requests:
+  - name: Health check
+    method: GET
+    url: "{{baseUrl}}/api/health"
+
+  - name: Liste tous les voyages
+    method: GET
+    url: "{{baseUrl}}/api/voyages"
+
+  - name: Recherche voyages (RG-01)
+    method: GET
+    url: "{{baseUrl}}/api/voyages?destination=Lisbonne&budget_max=500&date_depart=2026-07-20"
+
+  - name: Detail d'un voyage
+    method: GET
+    url: "{{baseUrl}}/api/voyage?id=1"

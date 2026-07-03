@@ -121,10 +121,15 @@ CREATE TABLE `utilisateur` (
 
 CREATE TABLE `voyage` (
   `Id_reservation` int NOT NULL,
+  `titre` varchar(150) DEFAULT NULL,
   `Destination` char(100) NOT NULL,
+  `pays` varchar(80) DEFAULT NULL,
   `Prix` float NOT NULL,
+  `capacite_max` int NOT NULL DEFAULT 50,
+  `image_url` varchar(255) DEFAULT NULL,
+  `description` text DEFAULT NULL,
   `DATE` date NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
