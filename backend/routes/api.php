@@ -2,12 +2,10 @@
 
 declare(strict_types=1);
 
-use App\Controllers\HealthController;
-use App\Controllers\VoyageController;
-
 /** @var App\Core\Router $router */
 
+$modulesPath = dirname(__DIR__) . '/src/Modules';
 
-// Module 1 — Recherche et réservation de voyages
-$router->get('/api/voyages', [VoyageController::class, 'index']);
-$router->get('/api/voyage', [VoyageController::class, 'show']);
+foreach (glob($modulesPath . '/*/routes.php') ?: [] as $routesFile) {
+    require $routesFile;
+}

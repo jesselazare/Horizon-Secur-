@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Services;
+namespace App\Modules\Voyage\Services;
 
 use App\Core\Response;
-use App\Repositories\VoyageRepository;
+use App\Modules\Voyage\Repositories\VoyageRepository;
 
 final class VoyageService
 {
@@ -15,8 +15,6 @@ final class VoyageService
     }
 
     /**
-     * Liste tous les voyages ou lance une recherche filtrée (Module 1 — RG-01).
-     *
      * @return array<int, array<string, mixed>>
      */
     public function listOrSearch(?string $destination, ?float $budgetMax, ?string $dateDepart): array
@@ -57,13 +55,13 @@ final class VoyageService
         }
 
         $reservations = $this->repository->countReservations($id);
-        $capaciteMax = $voyage->capaciteMax ?? 0;
-        $placesRestantes = $capaciteMax > 0 ? max(0, $capaciteMax - $reservations) : null;
+        $capaciteMax = $voyage->capaciteMax;
+        $placesRestantes = max(0, $capaciteMax - $reservations);
 
         return array_merge($voyage->toArray(), [
             'reservations_actuelles' => $reservations,
             'places_restantes' => $placesRestantes,
-            'disponible' => $capaciteMax === null || $capaciteMax === 0 || $reservations < $capaciteMax,
+            'disponible' => $reservations < $capaciteMax,
         ]);
     }
 
