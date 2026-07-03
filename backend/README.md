@@ -1,6 +1,6 @@
 ﻿# API PHP — Horizon-Secur
 
-Backend PHP organisé en couches. Le **Module 1 (Voyages)** est implémenté comme exemple à suivre.
+Backend PHP en **architecture modulaire**. Chaque module regroupe son code métier.
 
 ## Installation
 
@@ -17,35 +17,36 @@ php scripts/setup_db.php
 php -S localhost:8000 -t public
 ```
 
-## Endpoints disponibles
+## Structure modulaire
 
-| Méthode | URL | Description |
-|---------|-----|-------------|
-| GET | `/api/health` | Vérifier que l'API fonctionne |
-| GET | `/api/voyages` | Lister tous les voyages |
-| GET | `/api/voyages?destination=...&budget_max=...&date_depart=...` | Rechercher (RG-01) |
-| GET | `/api/voyage?id=1` | Détail d'un voyage |
+```
+src/
+├── Core/                    # Infrastructure (Router, Database, Response)
+└── Modules/
+    ├── Voyage/              # M1 — Recherche & réservation (exemple)
+    ├── Utilisateur/         # M2 — Espace client (à faire)
+    ├── Fraude/              # M3 — Anti-fraude (à faire)
+    └── Agent/               # M4 — Back-office (à faire)
+```
 
-## Structure
+Chaque module contient :
+```
+Module/
+├── Controllers/
+├── Models/
+├── Repositories/
+├── Services/
+└── routes.php               # Routes du module
+```
 
-| Dossier | Rôle |
-|---------|------|
-| `public/` | Point d'entrée web |
-| `config/` | Configuration |
-| `routes/` | Routes API |
-| `src/Core/` | Router, Database, Response |
-| `src/Controllers/` | Contrôleurs HTTP |
-| `src/Services/` | Logique métier |
-| `src/Repositories/` | Accès SQL |
-| `src/Models/` | Entités |
-| `database/` | Schéma SQL + données de test |
-| `scripts/setup_db.php` | Initialiser la base de données |
+Les routes sont chargées automatiquement depuis `routes/api.php`.
 
-Lire `documentation.md` pour le détail de chaque fichier.
+## Endpoints (Module Voyage)
 
-## Prochaines étapes (stagiaire)
+| Méthode | URL |
+|---------|-----|
+| GET | `/api/voyages` |
+| GET | `/api/voyages?destination=...&budget_max=...&date_depart=...` |
+| GET | `/api/voyage?id=1` |
 
-Reproduire le pattern du Module 1 pour les modules suivants :
-- M2 — Espace Client
-- M3 — Moteur Anti-Fraude
-- M4 — Back-Office Agent
+Lire `guide.md` pour l'orientation stagiaire et `documentation.md` pour le détail technique.

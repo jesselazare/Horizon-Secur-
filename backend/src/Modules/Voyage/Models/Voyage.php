@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace App\Models;
+namespace App\Modules\Voyage\Models;
 
 final class Voyage
 {
     public function __construct(
-        public readonly int $idVoyage,
+        public readonly int $id,
         public readonly string $destination,
-        public readonly float $prix,
         public readonly string $dateDepart,
+        public readonly float $prixParPersonne,
+        public readonly int $capaciteMax,
         public readonly ?string $titre = null,
         public readonly ?string $pays = null,
-        public readonly ?int $capaciteMax = null,
-        public readonly ?string $imageUrl = null,
         public readonly ?string $description = null,
+        public readonly ?string $imageUrl = null,
     ) {
     }
 
@@ -23,15 +23,15 @@ final class Voyage
     public static function fromRow(array $row): self
     {
         return new self(
-            (int) $row['id_voyage'],
+            (int) $row['id'],
             (string) $row['destination'],
-            (float) $row['prix'],
             (string) $row['date_depart'],
+            (float) $row['prix_par_personne'],
+            (int) $row['capacite_max'],
             isset($row['titre']) ? (string) $row['titre'] : null,
             isset($row['pays']) ? (string) $row['pays'] : null,
-            isset($row['capacite_max']) ? (int) $row['capacite_max'] : null,
-            isset($row['image_url']) ? (string) $row['image_url'] : null,
             isset($row['description']) ? (string) $row['description'] : null,
+            isset($row['image_url']) ? (string) $row['image_url'] : null,
         );
     }
 
@@ -39,15 +39,15 @@ final class Voyage
     public function toArray(): array
     {
         return array_filter([
-            'id_voyage' => $this->idVoyage,
+            'id' => $this->id,
             'titre' => $this->titre,
             'destination' => $this->destination,
             'pays' => $this->pays,
-            'prix' => $this->prix,
             'date_depart' => $this->dateDepart,
+            'prix_par_personne' => $this->prixParPersonne,
             'capacite_max' => $this->capaciteMax,
-            'image_url' => $this->imageUrl,
             'description' => $this->description,
+            'image_url' => $this->imageUrl,
         ], static fn (mixed $value): bool => $value !== null);
     }
 }

@@ -2,31 +2,31 @@
 
 declare(strict_types=1);
 
-namespace App\Repositories;
+namespace App\Modules\Voyage\Repositories;
 
 use App\Core\Database;
-use App\Models\Voyage;
+use App\Modules\Voyage\Models\Voyage;
 use PDO;
 
 final class VoyageRepository
 {
     private const SELECT_COLUMNS = '
-        Id_reservation AS id_voyage,
-        Destination AS destination,
-        Prix AS prix,
-        DATE AS date_depart,
+        id,
+        destination,
+        date_depart,
+        prix_par_personne,
+        capacite_max,
         titre,
         pays,
-        capacite_max,
-        image_url,
-        description
+        description,
+        image_url
     ';
 
     /** @return array<int, array<string, mixed>> */
     public function all(): array
     {
         $stmt = Database::getConnection()->query(
-            'SELECT ' . self::SELECT_COLUMNS . ' FROM voyage ORDER BY DATE ASC, Id_reservation ASC'
+            'SELECT ' . self::SELECT_COLUMNS . ' FROM voyage ORDER BY date_depart ASC, id ASC'
         );
 
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -38,8 +38,6 @@ final class VoyageRepository
     }
 
     /**
-     * Recherche de voyages selon les critères M1 (RG-01).
-     *
      * @return array<int, array<string, mixed>>
      */
     public function search(string $destination, float $budgetMax, string $dateDepart): array
@@ -47,10 +45,10 @@ final class VoyageRepository
         $stmt = Database::getConnection()->prepare(
             'SELECT ' . self::SELECT_COLUMNS . '
              FROM voyage
-             WHERE Destination LIKE :destination
-               AND Prix <= :budget_max
-               AND DATE = :date_depart
-             ORDER BY Prix ASC'
+             WHERE destination LIKE :destination
+               AND prix_par_personne <= :budget_max
+               AND date_depart = :date_depart
+             ORDER BY prix_par_personne ASC'
         );
 
         $stmt->execute([
@@ -70,7 +68,7 @@ final class VoyageRepository
     public function find(int $id): ?Voyage
     {
         $stmt = Database::getConnection()->prepare(
-            'SELECT ' . self::SELECT_COLUMNS . ' FROM voyage WHERE Id_reservation = :id'
+            'SELECT ' . self::SELECT_COLUMNS . ' FROM voyage WHERE id = :id'
         );
 
         $stmt->execute(['id' => $id]);
@@ -82,17 +80,12 @@ final class VoyageRepository
     public function countReservations(int $idVoyage): int
     {
         $stmt = Database::getConnection()->prepare(
-            'SELECT COUNT(*) AS total FROM reservation WHERE Id_voyage = :id_voyage'
+            'SELECT COUNT(*) AS total FROM reservation WHERE id_voyage = :id_voyage'
         );
 
         $stmt->execute(['id_voyage' => $idVoyage]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         return (int) ($row['total'] ?? 0);
-    }
-
-    public function exists(int $id): bool
-    {
-        return $this->find($id) !== null;
     }
 }

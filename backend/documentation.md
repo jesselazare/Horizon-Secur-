@@ -1,165 +1,145 @@
 # Documentation — API PHP Horizon-Secur
 
-## Vue d'ensemble
+## Architecture modulaire
 
 ```
 Requête HTTP
-    → public/index.php       (point d'entrée)
-    → config/bootstrap.php   (configuration)
-    → routes/api.php         (routage)
-    → Controller             (réception HTTP)
-    → Service                (logique métier)
-    → Repository             (accès base de données)
-    → Model                  (représentation des données)
-    → Response JSON          (réponse au client)
+    → public/index.php
+    → config/bootstrap.php
+    → routes/api.php              (charge tous les modules)
+    → Modules/{Nom}/routes.php
+    → Modules/{Nom}/Controllers/
+    → Modules/{Nom}/Services/
+    → Modules/{Nom}/Repositories/
+    → Modules/{Nom}/Models/
+    → Response JSON
 ```
 
 ## Arborescence
 
 ```
 backend/
-├── config/                 Configuration application et BDD
-├── database/               Schéma SQL + données de test
-├── postman/                Tests API (optionnel)
-├── public/                 Point d'entrée web (document root)
-├── routes/                 Déclaration des routes
-├── scripts/setup_db.php    Script d'initialisation de la BDD
+├── config/
+├── database/
+├── public/
+├── routes/
+│   └── api.php                 # Charge automatiquement les routes des modules
+├── scripts/
 ├── src/
-│   ├── Controllers/        Contrôleurs HTTP
-│   ├── Core/               Router, Database, Response, Controller
-│   ├── Middleware/         (vide — à utiliser pour M2/M4)
-│   ├── Models/             Entités
-│   ├── Repositories/       Requêtes SQL
-│   └── Services/           Logique métier
-├── storage/logs/           Logs applicatifs
-├── .env.example            Modèle de configuration
-├── composer.json           Dépendances PHP
-├── documentation.md        Ce fichier
-└── README.md               Guide de démarrage
+│   ├── Core/                   # Framework minimal (partagé)
+│   └── Modules/
+│       ├── Voyage/             # M1 — Exemple complet
+│       ├── Utilisateur/        # M2 — À développer
+│       ├── Fraude/             # M3 — À développer
+│       └── Agent/              # M4 — À développer
+├── documentation.md
+└── README.md
+```
+
+## Structure d'un module
+
+Chaque module est autonome et contient tout ce qui lui est nécessaire :
+
+```
+src/Modules/Voyage/
+├── Controllers/
+│   └── VoyageController.php    # namespace App\Modules\Voyage\Controllers
+├── Models/
+│   └── Voyage.php              # namespace App\Modules\Voyage\Models
+├── Repositories/
+│   └── VoyageRepository.php    # namespace App\Modules\Voyage\Repositories
+├── Services/
+│   └── VoyageService.php       # namespace App\Modules\Voyage\Services
+└── routes.php                  # Déclaration des routes du module
+```
+
+### `routes.php` du module
+
+```php
+use App\Modules\Voyage\Controllers\VoyageController;
+
+/** @var App\Core\Router $router */
+$router->get('/api/voyages', [VoyageController::class, 'index']);
+```
+
+### Chargement automatique
+
+Le fichier `routes/api.php` parcourt tous les modules :
+
+```php
+foreach (glob($modulesPath . '/*/routes.php') as $routesFile) {
+    require $routesFile;
+}
 ```
 
 ---
 
-## Fichiers essentiels
-
-### `composer.json`
-- Dépendance PHP >= 8.1
-- Autoload PSR-4 : namespace `App\` → dossier `src/`
-- Installation : `composer install`
-
-### `.env` / `.env.example`
-- Copier `.env.example` en `.env` et adapter les valeurs
-- Variables BDD : `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASS`
-- **Ne jamais commiter le fichier `.env`**
-
-### `public/index.php`
-Point d'entrée unique. Il charge Composer, la configuration, le routeur, puis dispatch la requête.
-
-### `routes/api.php`
-Déclare toutes les routes. C'est ici qu'on ajoute les nouveaux endpoints.
-
-### `scripts/setup_db.php`
-Crée la base `billeterie_voyage`, importe le schéma et les données de test.
-
----
-
-## Couches du code (`src/`)
-
-### Core — Infrastructure (ne pas modifier sauf besoin technique)
+## Core (partagé, ne pas mettre de logique métier)
 
 | Fichier | Rôle |
 |---------|------|
-| `Router.php` | Associe URL + méthode HTTP → contrôleur |
-| `Database.php` | Connexion PDO unique (Singleton) |
-| `Response.php` | Envoie les réponses JSON (`success`, `data`, `message`) |
-| `Controller.php` | Classe de base : `json()`, `input()`, extraction des champs |
-
-### Module 1 — Voyages (exemple à reproduire)
-
-| Fichier | Rôle |
-|---------|------|
-| `Models/Voyage.php` | Objet PHP représentant un voyage |
-| `Repositories/VoyageRepository.php` | Requêtes SQL (liste, recherche, détail) |
-| `Services/VoyageService.php` | Règles métier RG-01 et RG-02 |
-| `Controllers/VoyageController.php` | Endpoints `GET /api/voyages` et `GET /api/voyage` |
-
-### HealthController
-Contrôleur simple pour vérifier que l'API répond (`GET /api/health`).
+| `Router.php` | Routage HTTP + middleware |
+| `Database.php` | Connexion PDO |
+| `Response.php` | Réponses JSON |
+| `Controller.php` | Classe de base des contrôleurs |
 
 ---
 
-## Endpoints actuels
+## Modules
 
-| Méthode | URL | Fichier responsable |
-|---------|-----|---------------------|
-| GET | `/api/health` | `HealthController::index` |
-| GET | `/api/voyages` | `VoyageController::index` |
-| GET | `/api/voyage?id=X` | `VoyageController::show` |
+| Module | Dossier | Statut | Description |
+|--------|---------|--------|-------------|
+| M1 — Voyages | `Voyage/` | Fait (exemple) | Recherche et consultation |
+| M2 — Client | `Utilisateur/` | À faire | Compte, profil, historique |
+| M3 — Anti-fraude | `Fraude/` | À faire | Score, détection, blocage |
+| M4 — Agent | `Agent/` | À faire | Back-office administrateur |
 
-### Recherche de voyages (RG-01)
-Les 3 paramètres sont obligatoires ensemble :
-- `destination` — texte (recherche partielle)
-- `budget_max` — prix maximum
-- `date_depart` — format `AAAA-MM-JJ`
+---
 
-Exemple : `/api/voyages?destination=Lisbonne&budget_max=500&date_depart=2026-07-20`
+## Créer un nouveau module
 
-Sans paramètre : retourne tous les voyages.
+1. Créer le dossier `src/Modules/MonModule/`
+2. Ajouter `Controllers/`, `Models/`, `Repositories/`, `Services/`
+3. Créer `routes.php` avec les endpoints
+4. Le module est chargé automatiquement (pas de modification de `api.php`)
+
+**Namespaces :** `App\Modules\MonModule\{Couche}\{Classe}`
 
 ---
 
 ## Base de données
 
-| Fichier | Rôle |
-|---------|------|
-| `database/billeterie_voyage.sql` | Schéma complet (tables, clés, contraintes) |
-| `database/seed.sql` | 5 voyages de test |
-
-Tables principales : `voyage`, `reservation`, `utilisateur`, `paiement`, `alerte_antifraude`, etc.
-
----
-
-## Conventions à respecter
-
-| Couche | Fait | Ne fait pas |
-|--------|------|-------------|
-| **Controller** | Reçoit HTTP, appelle le Service, renvoie JSON | SQL direct, logique métier |
-| **Service** | Règles métier, validations | Accès HTTP, SQL direct |
-| **Repository** | Requêtes SQL (CRUD) | Logique métier, JSON |
-| **Model** | Structure de données | SQL, logique métier |
+| Table | Champs diagramme | Champs ajoutés |
+|-------|-----------------|----------------|
+| `utilisateur` | id, statut | nom, prenom, email, password, adresse, date_inscription |
+| `voyage` | id, destination, date_depart, prix_par_personne | capacite_max, titre, pays, description, image_url |
+| `voyageur` | id, num_passport, temps_saisie | nom, prenom, age, sexe, adresse |
+| `reservation` | id, reference, statut | date_reservation, id_utilisateur, id_voyage |
+| `reservation_voyageur` | — | liaison reservation ↔ voyageur |
+| `paiement` | id, pays_emission_carte, dates, statut | montant, methode_paiement, id_reservation |
+| `alerte_fraude` | tous les champs diagramme | date_detection, id_paiement, id_agent_interne |
+| `agent_interne` | id | nom, prenom, email, password, statut (tout agent = admin) |
 
 ---
 
-## Comment ajouter un nouveau module
+## Conventions
 
-En suivant l'exemple du Module 1 (Voyages) :
-
-1. Créer `src/Models/MaEntite.php`
-2. Créer `src/Repositories/MaEntiteRepository.php`
-3. Créer `src/Services/MaEntiteService.php`
-4. Créer `src/Controllers/MaEntiteController.php`
-5. Déclarer les routes dans `routes/api.php`
-6. Ajouter les requêtes de test dans `postman/collections/api.request.yaml`
+| Couche | Responsabilité |
+|--------|---------------|
+| **Controller** | HTTP, appelle le Service |
+| **Service** | Logique métier, validations |
+| **Repository** | Requêtes SQL |
+| **Model** | Structure de données |
 
 ---
 
-## Modules à développer
-
-| Module | Description | Priorité |
-|--------|-------------|----------|
-| **M1 — Voyages** | Recherche et consultation | Fait (exemple) |
-| **M2 — Espace Client** | Compte, profil, historique | À faire |
-| **M3 — Anti-Fraude** | Score, détection, blocage | À faire |
-| **M4 — Back-Office** | Tableau de bord agent | À faire |
-
----
-
-## Commandes utiles
+## Commandes
 
 ```bash
 cd backend
 composer install
 cp .env.example .env
 php scripts/setup_db.php
+composer dump-autoload
 php -S localhost:8000 -t public
 ```

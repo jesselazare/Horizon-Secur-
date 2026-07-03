@@ -2,18 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Controllers;
+namespace App\Modules\Voyage\Controllers;
 
 use App\Core\Controller;
 use App\Core\Response;
-use App\Services\VoyageService;
+use App\Modules\Voyage\Services\VoyageService;
 use PDOException;
 
-/**
- * Module 1 — Recherche et réservation de voyages.
- *
- * Endpoints d'exemple pour la consultation et la recherche de voyages.
- */
 final class VoyageController extends Controller
 {
     private VoyageService $service;
@@ -23,11 +18,6 @@ final class VoyageController extends Controller
         $this->service = new VoyageService();
     }
 
-    /**
-     * GET /api/voyages
-     * Sans paramètre : liste tous les voyages.
-     * Avec paramètres : recherche par destination, budget_max, date_depart (RG-01).
-     */
     public function index(): void
     {
         $destination = isset($_GET['destination']) ? trim((string) $_GET['destination']) : null;
@@ -56,10 +46,6 @@ final class VoyageController extends Controller
         ]);
     }
 
-    /**
-     * GET /api/voyage?id=1
-     * Détail d'un voyage avec disponibilité (RG-02).
-     */
     public function show(): void
     {
         $id = $this->resolveIdFromQuery();
