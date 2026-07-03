@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.2
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Jun 23, 2026 at 11:55 AM
--- Server version: 8.4.3
--- PHP Version: 8.3.26
+-- Hôte : 127.0.0.1:3306
+-- Généré le : ven. 03 juil. 2026 à 10:46
+-- Version du serveur : 8.3.0
+-- Version de PHP : 8.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,272 +18,218 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `billeterie_voyage`
+-- Base de données : `billeterie_voyage`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `administrateur`
+-- Structure de la table `agent_interne`
 --
 
-CREATE TABLE `administrateur` (
-  `Id_Admin` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `agent_interne`;
+CREATE TABLE IF NOT EXISTS `agent_interne` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `prenom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `statut` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'actif',
+  `date_autorisation` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_agent_email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `agent_interne`
+--
+
+INSERT INTO `agent_interne` (`id`, `nom`, `prenom`, `email`, `password`, `statut`, `date_autorisation`) VALUES
+(1, 'Fokam', 'Milly', 'admin@horizon-secur.fr', '$2y$10$v5NOJY3TjvgabNmQAFRBOuPeq33zU/K9WILNkELM/cUwSfhxM.2ES', 'actif', '2026-07-03 10:43:39'),
+(2, 'Martin', 'Sophie', 'agent@horizon-secur.fr', '$2y$10$v5NOJY3TjvgabNmQAFRBOuPeq33zU/K9WILNkELM/cUwSfhxM.2ES', 'actif', '2026-07-03 10:43:39');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_alerte`
+-- Structure de la table `alerte_fraude`
 --
 
-CREATE TABLE `admin_alerte` (
-  `Id_Admin` int NOT NULL,
-  `Id_Alerte` int NOT NULL,
-  `Date_consultation` datetime DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `alerte_fraude`;
+CREATE TABLE IF NOT EXISTS `alerte_fraude` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `score_suspicion` int NOT NULL DEFAULT '0',
+  `motif_geo` tinyint(1) NOT NULL DEFAULT '0',
+  `motif_vitesse` tinyint(1) NOT NULL DEFAULT '0',
+  `motif_achat_frenetique` tinyint(1) NOT NULL DEFAULT '0',
+  `pays_carte_detecte` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `temps_de_saisie` int DEFAULT NULL,
+  `nombre_cartes_utilise` int NOT NULL DEFAULT '0',
+  `statut` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'ouverte',
+  `date_detection` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `id_paiement` int NOT NULL,
+  `id_agent_interne` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_alerte_paiement` (`id_paiement`),
+  KEY `fk_alerte_agent` (`id_agent_interne`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `alerte_antifraude`
+-- Structure de la table `paiement`
 --
 
-CREATE TABLE `alerte_antifraude` (
-  `Id_Alerte` int NOT NULL,
-  `Nom_Alerte` char(100) NOT NULL,
-  `Score_Alerte` int NOT NULL,
-  `motifGeo` tinyint(1) DEFAULT '0',
-  `motifVitesse` tinyint(1) DEFAULT '0',
-  `motifAchatFrenetique` tinyint(1) DEFAULT '0',
-  `TempsDeSaisie` int DEFAULT NULL,
-  `PaysCarteDetecte` varchar(50) DEFAULT NULL,
-  `NbreCartesUtilises` int DEFAULT '0',
-  `Statut` varchar(20) NOT NULL,
-  `Id_Transaction` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `paiement`
---
-
-CREATE TABLE `paiement` (
-  `Id_Transaction` int NOT NULL,
-  `Nom_Banque` char(80) NOT NULL,
-  `Date_transaction` date NOT NULL,
-  `Nom_titulaire_carte` char(100) NOT NULL,
-  `Date_exp_carte` date NOT NULL,
-  `Cryptogramme` int NOT NULL,
-  `Statut` varchar(20) NOT NULL,
-  `Date_capture` date DEFAULT NULL,
-  `id_reservation` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `reservation`
---
-
-CREATE TABLE `reservation` (
+DROP TABLE IF EXISTS `paiement`;
+CREATE TABLE IF NOT EXISTS `paiement` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `pays_emission_carte` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date_autorisation` date DEFAULT NULL,
+  `date_capture` date DEFAULT NULL,
+  `statut` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'en_attente',
+  `montant` decimal(10,2) NOT NULL,
+  `methode_paiement` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date_transaction` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `id_reservation` int NOT NULL,
-  `Date_reservation` date NOT NULL,
-  `Reference` varchar(50) NOT NULL,
-  `Statut` varchar(20) NOT NULL,
-  `Num_passport` varchar(20) NOT NULL,
-  `Id_voyage` int NOT NULL,
-  `id_ut` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`id`),
+  KEY `fk_paiement_reservation` (`id_reservation`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `utilisateur`
+-- Structure de la table `reservation`
 --
 
-CREATE TABLE `utilisateur` (
-  `id_ut` int NOT NULL,
-  `Nom` char(50) NOT NULL,
-  `Prenom` char(50) NOT NULL,
-  `Adresse` varchar(150) DEFAULT NULL,
-  `Email` varchar(100) NOT NULL,
-  `Statut` varchar(20) NOT NULL,
-  `Num_passport` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `voyage`
---
-
-CREATE TABLE `voyage` (
-  `Id_reservation` int NOT NULL,
-  `titre` varchar(150) DEFAULT NULL,
-  `Destination` char(100) NOT NULL,
-  `pays` varchar(80) DEFAULT NULL,
-  `Prix` float NOT NULL,
-  `capacite_max` int NOT NULL DEFAULT 50,
-  `image_url` varchar(255) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `DATE` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `reservation`;
+CREATE TABLE IF NOT EXISTS `reservation` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `reference` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `statut` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'en_attente',
+  `date_reservation` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `id_utilisateur` int NOT NULL,
+  `id_voyage` int NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_reservation_reference` (`reference`),
+  KEY `fk_reservation_utilisateur` (`id_utilisateur`),
+  KEY `fk_reservation_voyage` (`id_voyage`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voyageur`
+-- Structure de la table `reservation_voyageur`
 --
 
-CREATE TABLE `voyageur` (
-  `Num_passport` varchar(20) NOT NULL,
-  `Nom` char(50) NOT NULL,
-  `Prenom` char(50) NOT NULL,
-  `Age` int NOT NULL,
-  `Sexe` char(1) DEFAULT NULL,
-  `Adresse` varchar(150) DEFAULT NULL,
-  `Temps_saisie` int DEFAULT NULL
-) ;
+DROP TABLE IF EXISTS `reservation_voyageur`;
+CREATE TABLE IF NOT EXISTS `reservation_voyageur` (
+  `id_reservation` int NOT NULL,
+  `id_voyageur` int NOT NULL,
+  PRIMARY KEY (`id_reservation`,`id_voyageur`),
+  KEY `fk_rv_voyageur` (`id_voyageur`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
 
 --
--- Indexes for dumped tables
+-- Structure de la table `utilisateur`
+--
+
+DROP TABLE IF EXISTS `utilisateur`;
+CREATE TABLE IF NOT EXISTS `utilisateur` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `prenom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `adresse` varchar(150) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `statut` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'actif',
+  `date_inscription` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_utilisateur_email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `voyage`
+--
+
+DROP TABLE IF EXISTS `voyage`;
+CREATE TABLE IF NOT EXISTS `voyage` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `destination` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date_depart` date NOT NULL,
+  `prix_par_personne` decimal(10,2) NOT NULL,
+  `capacite_max` int NOT NULL DEFAULT '50',
+  `titre` varchar(150) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pays` varchar(80) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `image_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_voyage_recherche` (`destination`,`date_depart`,`prix_par_personne`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `voyage`
+--
+
+INSERT INTO `voyage` (`id`, `destination`, `date_depart`, `prix_par_personne`, `capacite_max`, `titre`, `pays`, `description`, `image_url`) VALUES
+(1, 'Nairobi', '2026-08-15', 1299.00, 20, 'Safari au Kenya', 'Kenya', 'Decouverte des savanes et de la faune africaine.', '/images/kenya.jpg'),
+(2, 'Denpasar', '2026-09-01', 899.00, 30, 'Escapade a Bali', 'Indonesie', 'Plages paradisiaques et temples.', '/images/bali.jpg'),
+(3, 'Lisbonne', '2026-07-20', 450.00, 40, 'City break a Lisbonne', 'Portugal', 'Week-end culturel et gastronomie portugaise.', '/images/lisbonne.jpg'),
+(4, 'Reykjavik', '2026-10-05', 1599.00, 15, 'Aventure en Islande', 'Islande', 'Aurores boreales et geysers.', '/images/islande.jpg'),
+(5, 'Male', '2026-11-12', 2200.00, 10, 'Detente aux Maldives', 'Maldives', 'Sejour tout inclus sur lagon turquoise.', '/images/maldives.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `voyageur`
+--
+
+DROP TABLE IF EXISTS `voyageur`;
+CREATE TABLE IF NOT EXISTS `voyageur` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `num_passport` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `prenom` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `age` int NOT NULL,
+  `sexe` char(1) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `adresse` varchar(150) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `temps_saisie` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_voyageur_passport` (`num_passport`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Contraintes pour les tables déchargées
 --
 
 --
--- Indexes for table `administrateur`
+-- Contraintes pour la table `alerte_fraude`
 --
-ALTER TABLE `administrateur`
-  ADD PRIMARY KEY (`Id_Admin`);
+ALTER TABLE `alerte_fraude`
+  ADD CONSTRAINT `fk_alerte_agent` FOREIGN KEY (`id_agent_interne`) REFERENCES `agent_interne` (`id`),
+  ADD CONSTRAINT `fk_alerte_paiement` FOREIGN KEY (`id_paiement`) REFERENCES `paiement` (`id`);
 
 --
--- Indexes for table `admin_alerte`
---
-ALTER TABLE `admin_alerte`
-  ADD PRIMARY KEY (`Id_Admin`,`Id_Alerte`),
-  ADD KEY `fk_aa_alerte` (`Id_Alerte`);
-
---
--- Indexes for table `alerte_antifraude`
---
-ALTER TABLE `alerte_antifraude`
-  ADD PRIMARY KEY (`Id_Alerte`),
-  ADD KEY `fk_alerte_paiement` (`Id_Transaction`);
-
---
--- Indexes for table `paiement`
+-- Contraintes pour la table `paiement`
 --
 ALTER TABLE `paiement`
-  ADD PRIMARY KEY (`Id_Transaction`),
-  ADD KEY `fk_pai_reservation` (`id_reservation`);
+  ADD CONSTRAINT `fk_paiement_reservation` FOREIGN KEY (`id_reservation`) REFERENCES `reservation` (`id`);
 
 --
--- Indexes for table `reservation`
+-- Contraintes pour la table `reservation`
 --
 ALTER TABLE `reservation`
-  ADD PRIMARY KEY (`id_reservation`),
-  ADD UNIQUE KEY `Reference` (`Reference`),
-  ADD KEY `fk_res_voyageur` (`Num_passport`),
-  ADD KEY `fk_res_voyage` (`Id_voyage`),
-  ADD KEY `fk_res_utilisateur` (`id_ut`);
+  ADD CONSTRAINT `fk_reservation_utilisateur` FOREIGN KEY (`id_utilisateur`) REFERENCES `utilisateur` (`id`),
+  ADD CONSTRAINT `fk_reservation_voyage` FOREIGN KEY (`id_voyage`) REFERENCES `voyage` (`id`);
 
 --
--- Indexes for table `utilisateur`
+-- Contraintes pour la table `reservation_voyageur`
 --
-ALTER TABLE `utilisateur`
-  ADD PRIMARY KEY (`id_ut`),
-  ADD UNIQUE KEY `Email` (`Email`),
-  ADD KEY `fk_ut_voyageur` (`Num_passport`);
-
---
--- Indexes for table `voyage`
---
-ALTER TABLE `voyage`
-  ADD PRIMARY KEY (`Id_reservation`);
-
---
--- Indexes for table `voyageur`
---
-ALTER TABLE `voyageur`
-  ADD PRIMARY KEY (`Num_passport`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `administrateur`
---
-ALTER TABLE `administrateur`
-  MODIFY `Id_Admin` int NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `alerte_antifraude`
---
-ALTER TABLE `alerte_antifraude`
-  MODIFY `Id_Alerte` int NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `paiement`
---
-ALTER TABLE `paiement`
-  MODIFY `Id_Transaction` int NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `reservation`
---
-ALTER TABLE `reservation`
-  MODIFY `id_reservation` int NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `utilisateur`
---
-ALTER TABLE `utilisateur`
-  MODIFY `id_ut` int NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `voyage`
---
-ALTER TABLE `voyage`
-  MODIFY `Id_reservation` int NOT NULL AUTO_INCREMENT;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `admin_alerte`
---
-ALTER TABLE `admin_alerte`
-  ADD CONSTRAINT `fk_aa_admin` FOREIGN KEY (`Id_Admin`) REFERENCES `administrateur` (`Id_Admin`),
-  ADD CONSTRAINT `fk_aa_alerte` FOREIGN KEY (`Id_Alerte`) REFERENCES `alerte_antifraude` (`Id_Alerte`);
-
---
--- Constraints for table `alerte_antifraude`
---
-ALTER TABLE `alerte_antifraude`
-  ADD CONSTRAINT `fk_alerte_paiement` FOREIGN KEY (`Id_Transaction`) REFERENCES `paiement` (`Id_Transaction`);
-
---
--- Constraints for table `paiement`
---
-ALTER TABLE `paiement`
-  ADD CONSTRAINT `fk_pai_reservation` FOREIGN KEY (`id_reservation`) REFERENCES `reservation` (`id_reservation`);
-
---
--- Constraints for table `reservation`
---
-ALTER TABLE `reservation`
-  ADD CONSTRAINT `fk_res_utilisateur` FOREIGN KEY (`id_ut`) REFERENCES `utilisateur` (`id_ut`),
-  ADD CONSTRAINT `fk_res_voyage` FOREIGN KEY (`Id_voyage`) REFERENCES `voyage` (`Id_reservation`),
-  ADD CONSTRAINT `fk_res_voyageur` FOREIGN KEY (`Num_passport`) REFERENCES `voyageur` (`Num_passport`);
-
---
--- Constraints for table `utilisateur`
---
-ALTER TABLE `utilisateur`
-  ADD CONSTRAINT `fk_ut_voyageur` FOREIGN KEY (`Num_passport`) REFERENCES `voyageur` (`Num_passport`);
+ALTER TABLE `reservation_voyageur`
+  ADD CONSTRAINT `fk_rv_reservation` FOREIGN KEY (`id_reservation`) REFERENCES `reservation` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk_rv_voyageur` FOREIGN KEY (`id_voyageur`) REFERENCES `voyageur` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
