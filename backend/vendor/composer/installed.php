@@ -1,1 +1,23 @@
-㼼桰⁰敲畴湲愠牲祡ਨ††爧潯❴㴠‾牡慲⡹ †††✠慮敭‧㸽✠潨楲潺⵮敳畣⽲灡❩ਬ††††瀧敲瑴役敶獲潩❮㴠‾搧癥洭楡❮ਬ††††瘧牥楳湯‧㸽✠敤⵶慭湩Ⱗ †††✠敲敦敲据❥㴠‾挧㔴挵愸㌱〹㘰㜹㠵愱收㌷㜶ㄳ㘵㙥改戸㌸挷✶ਬ††††琧灹❥㴠‾瀧潲敪瑣Ⱗ †††✠湩瑳污彬慰桴‧㸽张䑟剉彟⸠✠ⸯ⼮⸮✯ਬ††††愧楬獡獥‧㸽愠牲祡⤨ਬ††††搧癥‧㸽琠畲ⱥ †⤠ਬ††瘧牥楳湯❳㴠‾牡慲⡹ †††✠潨楲潺⵮敳畣⽲灡❩㴠‾牡慲⡹ †††††✠牰瑥祴癟牥楳湯‧㸽✠敤⵶慭湩Ⱗ †††††✠敶獲潩❮㴠‾搧癥洭楡❮ਬ††††††爧晥牥湥散‧㸽✠㑣㔵㡣ㅡ㤳〰㤶㔷ㄸ㙡㝥㘳㌷㔱收㤶㡥㡢㜳㙣Ⱗ †††††✠祴数‧㸽✠牰橯捥❴ਬ††††††椧獮慴汬灟瑡❨㴠‾彟䥄归 ‮⼧⸮ⸯ⼮Ⱗ †††††✠污慩敳❳㴠‾牡慲⡹Ⱙ †††††✠敤彶敲畱物浥湥❴㴠‾慦獬ⱥ †††⤠ਬ††Ⱙ⤊਻
+<?php return array(
+    'root' => array(
+        'name' => 'horizon-secur/api',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'e3654a3f1ab77362d4af4f47ff53bd22dab8db95',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'horizon-secur/api' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'e3654a3f1ab77362d4af4f47ff53bd22dab8db95',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

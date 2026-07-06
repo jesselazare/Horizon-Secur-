@@ -1,1 +1,396 @@
-㼼桰ੰ⼊ਪ⨠吠楨⁳楦敬椠⁳慰瑲漠⁦潃灭獯牥ਮ⨠ ‪挨 楎獬䄠敤浲湡⁮渼摡牥慭䁮慮敤浲湡搮㹥 ‪††潊摲⁩潂杧慩潮㰠⹪潢杧慩潮獀汥⹤敢ਾ⨠ ‪潆⁲桴⁥畦汬挠灯特杩瑨愠摮氠捩湥敳椠普牯慭楴湯‬汰慥敳瘠敩⁷桴⁥䥌䕃华੅⨠映汩⁥桴瑡眠獡搠獩牴扩瑵摥眠瑩⁨桴獩猠畯捲⁥潣敤ਮ⨠ਯ渊浡獥慰散䌠浯潰敳㭲ਊ獵⁥潃灭獯牥䅜瑵汯慯層汃獡䱳慯敤㭲甊敳䌠浯潰敳屲敓癭牥噜牥楳湯慐獲牥਻⼊⨪ ‪桔獩挠慬獳椠⁳潣楰摥椠⁮癥牥⁹潃灭獯牥椠獮慴汬摥瀠潲敪瑣愠摮愠慶汩扡敬琠⁯污੬⨠ ‪敓⁥污潳栠瑴獰⼺术瑥潣灭獯牥漮杲搯捯〯ⴷ畲瑮浩⹥摭椣獮慴汬摥瘭牥楳湯ੳ⨠ ‪潔爠煥極敲椠獴瀠敲敳据ⱥ礠畯挠湡爠煥極敲怠潣灭獯牥爭湵楴敭愭楰帠⸲怰 ਪ⨠䀠楦慮੬⨠ਯ汣獡⁳湉瑳污敬噤牥楳湯ੳ੻††⨯ਪ††⨠䀠慶⁲瑳楲杮湼汵⁬晩猠瑥⠠祢爠晥敬瑣潩⁮祢䌠浯潰敳⥲‬桴獩猠潨汵⁤敢猠瑥琠⁯桴⁥慰桴眠敨敲琠楨⁳汣獡⁳獩戠楥杮挠灯敩⁤潴 ††‪楀瑮牥慮੬††⨠ਯ††牰癩瑡⁥瑳瑡捩␠敳晬楄⁲‽畮汬਻ †⼠⨪ ††‪癀牡洠硩摥嵛湼汵੬††⨠䀠獰污⵭慶⁲牡慲筹潲瑯›牡慲筹慮敭›瑳楲杮‬牰瑥祴癟牥楳湯›瑳楲杮‬敶獲潩㩮猠牴湩Ⱨ爠晥牥湥散›瑳楲杮湼汵ⱬ琠灹㩥猠牴湩Ⱨ椠獮慴汬灟瑡㩨猠牴湩Ⱨ愠楬獡獥›瑳楲杮嵛‬敤㩶戠潯絬‬敶獲潩獮›牡慲㱹瑳楲杮‬牡慲筹牰瑥祴癟牥楳湯㨿猠牴湩Ⱨ瘠牥楳湯㨿猠牴湩Ⱨ爠晥牥湥散㨿猠牴湩籧畮汬‬祴数㨿猠牴湩Ⱨ椠獮慴汬灟瑡㽨›瑳楲杮‬污慩敳㽳›瑳楲杮嵛‬敤彶敲畱物浥湥㩴戠潯ⱬ爠灥慬散㽤›瑳楲杮嵛‬牰癯摩摥㨿猠牴湩孧絝紾慼牲祡絻湼汵੬††⨠ਯ††牰癩瑡⁥瑳瑡捩␠湩瑳污敬㭤ਊ††⨯ਪ††⨠䀠慶⁲潢汯 ††⼪ †瀠楲慶整猠慴楴⁣椤獮慴汬摥獉潌慣䑬物਻ †⼠⨪ ††‪癀牡戠潯籬畮汬 ††⼪ †瀠楲慶整猠慴楴⁣挤湡敇噴湥潤獲਻ †⼠⨪ ††‪癀牡愠牲祡嵛 ††‪灀慳浬瘭牡愠牲祡猼牴湩Ⱨ愠牲祡牻潯㩴愠牲祡湻浡㩥猠牴湩Ⱨ瀠敲瑴役敶獲潩㩮猠牴湩Ⱨ瘠牥楳湯›瑳楲杮‬敲敦敲据㩥猠牴湩籧畮汬‬祴数›瑳楲杮‬湩瑳污彬慰桴›瑳楲杮‬污慩敳㩳猠牴湩孧ⱝ搠癥›潢汯ⱽ瘠牥楳湯㩳愠牲祡猼牴湩Ⱨ愠牲祡灻敲瑴役敶獲潩㽮›瑳楲杮‬敶獲潩㽮›瑳楲杮‬敲敦敲据㽥›瑳楲杮湼汵ⱬ琠灹㽥›瑳楲杮‬湩瑳污彬慰桴㨿猠牴湩Ⱨ愠楬獡獥㨿猠牴湩孧ⱝ搠癥牟煥極敲敭瑮›潢汯‬敲汰捡摥㨿猠牴湩孧ⱝ瀠潲楶敤㽤›瑳楲杮嵛㹽㹽 ††⼪ †瀠楲慶整猠慴楴⁣椤獮慴汬摥祂敖摮牯㴠愠牲祡⤨਻ †⼠⨪ ††‪敒畴湲⁳⁡楬瑳漠⁦污⁬慰正条⁥慮敭⁳桷捩⁨牡⁥牰獥湥ⱴ攠瑩敨⁲祢戠楥杮椠獮慴汬摥‬敲汰捡摥漠⁲牰癯摩摥 ††ਪ††⨠䀠敲畴湲猠牴湩孧੝††⨠䀠獰污⵭敲畴湲氠獩㱴瑳楲杮ਾ††⨠ਯ††異汢捩猠慴楴⁣畦据楴湯朠瑥湉瑳污敬偤捡慫敧⡳਩††੻††††瀤捡慫敧⁳‽牡慲⡹㬩 †††映牯慥档⠠敳晬㨺敧䥴獮慴汬摥⤨愠⁳椤獮慴汬摥 ੻††††††瀤捡慫敧孳⁝‽牡慲役敫獹␨湩瑳污敬孤瘧牥楳湯❳⥝਻††††੽ †††椠⁦ㄨ㴠㴽尠潣湵⡴瀤捡慫敧⥳ ੻††††††敲畴湲␠慰正条獥せ㭝 †††素ਊ††††敲畴湲愠牲祡歟祥⡳牡慲役汦灩尨慣汬畟敳彲畦据慟牲祡✨牡慲役敭杲❥‬瀤捡慫敧⥳⤩਻††੽ †⼠⨪ ††‪敒畴湲⁳⁡楬瑳漠⁦污⁬慰正条⁥慮敭⁳楷桴愠猠数楣楦⁣祴数攠朮‮氧扩慲祲ਧ††⨠ ††‪灀牡浡†瑳楲杮†␠祴数 ††‪牀瑥牵⁮瑳楲杮嵛 ††‪灀慳浬爭瑥牵⁮楬瑳猼牴湩㹧 ††⼪ †瀠扵楬⁣瑳瑡捩映湵瑣潩⁮敧䥴獮慴汬摥慐正条獥祂祔数␨祴数਩††੻††††瀤捡慫敧䉳呹灹⁥‽牡慲⡹㬩ਊ††††潦敲捡⁨猨汥㩦机瑥湉瑳污敬⡤ 獡␠湩瑳污敬⥤笠 †††††映牯慥档⠠椤獮慴汬摥❛敶獲潩獮崧愠⁳渤浡⁥㸽␠慰正条⥥笠 †††††††椠⁦椨獳瑥␨慰正条孥琧灹❥⥝☠…瀤捡慫敧❛祴数崧㴠㴽␠祴数 ੻††††††††††瀤捡慫敧䉳呹灹孥⁝‽渤浡㭥 †††††††素 †††††素 †††素ਊ††††敲畴湲␠慰正条獥祂祔数਻††੽ †⼠⨪ ††‪桃捥獫眠敨桴牥琠敨朠癩湥瀠捡慫敧椠⁳湩瑳污敬੤††⨠ ††‪桔獩愠獬⁯敲畴湲⁳牴敵椠⁦桴⁥慰正条⁥慮敭椠⁳牰癯摩摥漠⁲敲汰捡摥戠⁹湡瑯敨⁲慰正条੥††⨠ ††‪灀牡浡†瑳楲杮␠慰正条乥浡੥††⨠䀠慰慲⁭戠潯⁬†椤据畬敤敄剶煥極敲敭瑮ੳ††⨠䀠敲畴湲戠潯੬††⨠ਯ††異汢捩猠慴楴⁣畦据楴湯椠䥳獮慴汬摥␨慰正条乥浡ⱥ␠湩汣摵䑥癥敒畱物浥湥獴㴠琠畲⥥ †笠 †††映牯慥档⠠敳晬㨺敧䥴獮慴汬摥⤨愠⁳椤獮慴汬摥 ੻††††††晩⠠獩敳⡴椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥⤩笠 †††††††爠瑥牵⁮椤据畬敤敄剶煥極敲敭瑮⁳籼℠獩敳⡴椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛敤彶敲畱物浥湥❴⥝簠⁼椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛敤彶敲畱物浥湥❴⁝㴽‽慦獬㭥 †††††素 †††素ਊ††††敲畴湲映污敳਻††੽ †⼠⨪ ††‪桃捥獫眠敨桴牥琠敨朠癩湥瀠捡慫敧猠瑡獩楦獥愠瘠牥楳湯挠湯瑳慲湩ੴ††⨠ ††‪⹥⹧䤠⁦潹⁵慷瑮琠⁯湫睯眠敨桴牥瘠牥楳湯㈠㌮‫景瀠捡慫敧映潯戯牡椠⁳湩瑳污敬Ɽ礠畯眠畯摬挠污㩬 ††ਪ††⨠†䌠浯潰敳屲湉瑳污敬噤牥楳湯㩳猺瑡獩楦獥渨睥嘠牥楳湯慐獲牥‬昧潯戯牡Ⱗ✠㉞㌮⤧ ††ਪ††⨠䀠慰慲⁭嘠牥楳湯慐獲牥␠慰獲牥†††湉瑳污⁬潣灭獯牥猯浥敶⁲潴栠癡⁥捡散獳琠⁯桴獩挠慬獳愠摮映湵瑣潩慮楬祴 ††‪灀牡浡†瑳楲杮††††瀤捡慫敧慎敭 ††‪灀牡浡†瑳楲杮湼汵⁬†挤湯瑳慲湩⁴䄠瘠牥楳湯挠湯瑳慲湩⁴潴挠敨正映牯‬晩礠畯瀠獡⁳湯⁥潹⁵慨敶琠⁯慭敫猠牵⁥潣灭獯牥猯浥敶⁲獩爠煥極敲⁤祢礠畯⁲慰正条੥††⨠䀠敲畴湲戠潯੬††⨠ਯ††異汢捩猠慴楴⁣畦据楴湯猠瑡獩楦獥嘨牥楳湯慐獲牥␠慰獲牥‬瀤捡慫敧慎敭‬挤湯瑳慲湩⥴ †笠 †††␠潣獮牴楡瑮㴠␠慰獲牥㸭慰獲䍥湯瑳慲湩獴⠨瑳楲杮 挤湯瑳慲湩⥴਻††††瀤潲楶敤⁤‽瀤牡敳⵲瀾牡敳潃獮牴楡瑮⡳敳晬㨺敧噴牥楳湯慒杮獥␨慰正条乥浡⥥㬩ਊ††††敲畴湲␠牰癯摩摥㸭慭捴敨⡳挤湯瑳慲湩⥴਻††੽ †⼠⨪ ††‪敒畴湲⁳⁡敶獲潩⁮潣獮牴楡瑮爠灥敲敳瑮湩⁧污⁬桴⁥慲杮⡥⥳眠楨档愠敲椠獮慴汬摥映牯愠朠癩湥瀠捡慫敧 ††ਪ††⨠䤠⁴獩攠獡敩⁲潴甠敳琠楨⁳楶⁡獩湉瑳污敬⡤ 楷桴琠敨␠潣獮牴楡瑮愠杲浵湥⁴晩礠畯渠敥⁤潴挠敨正 ††‪桷瑥敨⁲⁡楧敶⁮敶獲潩⁮景愠瀠捡慫敧椠⁳湩瑳污敬Ɽ愠摮渠瑯樠獵⁴桷瑥敨⁲瑩攠楸瑳ੳ††⨠ ††‪灀牡浡†瑳楲杮␠慰正条乥浡੥††⨠䀠敲畴湲猠牴湩⁧敖獲潩⁮潣獮牴楡瑮甠慳汢⁥楷桴挠浯潰敳⽲敳癭牥 ††⼪ †瀠扵楬⁣瑳瑡捩映湵瑣潩⁮敧噴牥楳湯慒杮獥␨慰正条乥浡⥥ †笠 †††映牯慥档⠠敳晬㨺敧䥴獮慴汬摥⤨愠⁳椤獮慴汬摥 ੻††††††晩⠠椡獳瑥␨湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭⥝ ੻††††††††潣瑮湩敵਻††††††੽ †††††␠慲杮獥㴠愠牲祡⤨਻††††††晩⠠獩敳⡴椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛牰瑥祴癟牥楳湯崧⤩笠 †††††††␠慲杮獥嵛㴠␠湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭孝瀧敲瑴役敶獲潩❮㭝 †††††素 †††††椠⁦愨牲祡歟祥敟楸瑳⡳愧楬獡獥Ⱗ␠湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭⥝ ੻††††††††爤湡敧⁳‽牡慲役敭杲⡥爤湡敧ⱳ␠湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭孝愧楬獡獥崧㬩 †††††素 †††††椠⁦愨牲祡歟祥敟楸瑳⡳爧灥慬散❤‬椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥⤩笠 †††††††␠慲杮獥㴠愠牲祡浟牥敧␨慲杮獥‬椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛敲汰捡摥崧㬩 †††††素 †††††椠⁦愨牲祡歟祥敟楸瑳⡳瀧潲楶敤❤‬椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥⤩笠 †††††††␠慲杮獥㴠愠牲祡浟牥敧␨慲杮獥‬椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛牰癯摩摥崧㬩 †††††素ਊ††††††敲畴湲椠灭潬敤✨簠⁼Ⱗ␠慲杮獥㬩 †††素ਊ††††桴潲⁷敮⁷作瑵晏潂湵獤硅散瑰潩⡮倧捡慫敧∠‧‮瀤捡慫敧慎敭⸠✠•獩渠瑯椠獮慴汬摥⤧਻††੽ †⼠⨪ ††‪灀牡浡†瑳楲杮†††瀤捡慫敧慎敭 ††‪牀瑥牵⁮瑳楲杮湼汵⁬晉琠敨瀠捡慫敧椠⁳敢湩⁧敲汰捡摥漠⁲牰癯摩摥戠瑵椠⁳潮⁴敲污祬椠獮慴汬摥‬畮汬眠汩⁬敢爠瑥牵敮⁤獡瘠牥楳湯‬獵⁥慳楴晳敩⁳牯朠瑥敖獲潩剮湡敧⁳晩礠畯渠敥⁤潴欠潮⁷晩愠朠癩湥瘠牥楳湯椠⁳牰獥湥ੴ††⨠ਯ††異汢捩猠慴楴⁣畦据楴湯朠瑥敖獲潩⡮瀤捡慫敧慎敭਩††੻††††潦敲捡⁨猨汥㩦机瑥湉瑳污敬⡤ 獡␠湩瑳污敬⥤笠 †††††椠⁦ℨ獩敳⡴椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥⤩笠 †††††††挠湯楴畮㭥 †††††素ਊ††††††晩⠠椡獳瑥␨湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭孝瘧牥楳湯崧⤩笠 †††††††爠瑥牵⁮畮汬਻††††††੽ †††††爠瑥牵⁮椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛敶獲潩❮㭝 †††素ਊ††††桴潲⁷敮⁷作瑵晏潂湵獤硅散瑰潩⡮倧捡慫敧∠‧‮瀤捡慫敧慎敭⸠✠•獩渠瑯椠獮慴汬摥⤧਻††੽ †⼠⨪ ††‪灀牡浡†瑳楲杮†††瀤捡慫敧慎敭 ††‪牀瑥牵⁮瑳楲杮湼汵⁬晉琠敨瀠捡慫敧椠⁳敢湩⁧敲汰捡摥漠⁲牰癯摩摥戠瑵椠⁳潮⁴敲污祬椠獮慴汬摥‬畮汬眠汩⁬敢爠瑥牵敮⁤獡瘠牥楳湯‬獵⁥慳楴晳敩⁳牯朠瑥敖獲潩剮湡敧⁳晩礠畯渠敥⁤潴欠潮⁷晩愠朠癩湥瘠牥楳湯椠⁳牰獥湥ੴ††⨠ਯ††異汢捩猠慴楴⁣畦据楴湯朠瑥牐瑥祴敖獲潩⡮瀤捡慫敧慎敭਩††੻††††潦敲捡⁨猨汥㩦机瑥湉瑳污敬⡤ 獡␠湩瑳污敬⥤笠 †††††椠⁦ℨ獩敳⡴椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥⤩笠 †††††††挠湯楴畮㭥 †††††素ਊ††††††晩⠠椡獳瑥␨湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭孝瀧敲瑴役敶獲潩❮⥝ ੻††††††††敲畴湲渠汵㭬 †††††素ਊ††††††敲畴湲␠湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭孝瀧敲瑴役敶獲潩❮㭝 †††素ਊ††††桴潲⁷敮⁷作瑵晏潂湵獤硅散瑰潩⡮倧捡慫敧∠‧‮瀤捡慫敧慎敭⸠✠•獩渠瑯椠獮慴汬摥⤧਻††੽ †⼠⨪ ††‪灀牡浡†瑳楲杮†††瀤捡慫敧慎敭 ††‪牀瑥牵⁮瑳楲杮湼汵⁬晉琠敨瀠捡慫敧椠⁳敢湩⁧敲汰捡摥漠⁲牰癯摩摥戠瑵椠⁳潮⁴敲污祬椠獮慴汬摥‬畮汬眠汩⁬敢爠瑥牵敮⁤獡爠晥牥湥散 ††⼪ †瀠扵楬⁣瑳瑡捩映湵瑣潩⁮敧剴晥牥湥散␨慰正条乥浡⥥ †笠 †††映牯慥档⠠敳晬㨺敧䥴獮慴汬摥⤨愠⁳椤獮慴汬摥 ੻††††††晩⠠椡獳瑥␨湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭⥝ ੻††††††††潣瑮湩敵਻††††††੽ †††††椠⁦ℨ獩敳⡴椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛敲敦敲据❥⥝ ੻††††††††敲畴湲渠汵㭬 †††††素ਊ††††††敲畴湲␠湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭孝爧晥牥湥散崧਻††††੽ †††琠牨睯渠睥尠畏佴䉦畯摮䕳捸灥楴湯✨慐正条⁥✢⸠␠慰正条乥浡⁥‮∧椠⁳潮⁴湩瑳污敬❤㬩 †素ਊ††⨯ਪ††⨠䀠慰慲⁭猠牴湩⁧††␠慰正条乥浡੥††⨠䀠敲畴湲猠牴湩籧畮汬䤠⁦桴⁥慰正条⁥獩戠楥杮爠灥慬散⁤牯瀠潲楶敤⁤畢⁴獩渠瑯爠慥汬⁹湩瑳污敬Ɽ渠汵⁬楷汬戠⁥敲畴湲摥愠⁳湩瑳污⁬慰桴‮慐正条獥漠⁦祴数洠瑥灡捡慫敧⁳污潳栠癡⁥⁡畮汬椠獮慴汬瀠瑡⹨ ††⼪ †瀠扵楬⁣瑳瑡捩映湵瑣潩⁮敧䥴獮慴汬慐桴␨慰正条乥浡⥥ †笠 †††映牯慥档⠠敳晬㨺敧䥴獮慴汬摥⤨愠⁳椤獮慴汬摥 ੻††††††晩⠠椡獳瑥␨湩瑳污敬孤瘧牥楳湯❳孝瀤捡慫敧慎敭⥝ ੻††††††††潣瑮湩敵਻††††††੽ †††††爠瑥牵⁮獩敳⡴椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛湩瑳污彬慰桴崧 ‿椤獮慴汬摥❛敶獲潩獮崧⑛慰正条乥浡嵥❛湩瑳污彬慰桴崧㨠渠汵㭬 †††素ਊ††††桴潲⁷敮⁷作瑵晏潂湵獤硅散瑰潩⡮倧捡慫敧∠‧‮瀤捡慫敧慎敭⸠✠•獩渠瑯椠獮慴汬摥⤧਻††੽ †⼠⨪ ††‪牀瑥牵⁮牡慲੹††⨠䀠獰污⵭敲畴湲愠牲祡湻浡㩥猠牴湩Ⱨ瀠敲瑴役敶獲潩㩮猠牴湩Ⱨ瘠牥楳湯›瑳楲杮‬敲敦敲据㩥猠牴湩籧畮汬‬祴数›瑳楲杮‬湩瑳污彬慰桴›瑳楲杮‬污慩敳㩳猠牴湩孧ⱝ搠癥›潢汯੽††⨠ਯ††異汢捩猠慴楴⁣畦据楴湯朠瑥潒瑯慐正条⡥਩††੻††††椤獮慴汬摥㴠猠汥㩦机瑥湉瑳污敬⡤㬩ਊ††††敲畴湲␠湩瑳污敬孤崰❛潲瑯崧਻††੽ †⼠⨪ ††‪敒畴湲⁳桴⁥慲⁷湩瑳污敬⹤桰⁰慤慴映牯挠獵潴⁭浩汰浥湥慴楴湯ੳ††⨠ ††‪摀灥敲慣整⁤獕⁥敧䅴汬慒䑷瑡⡡ 湩瑳慥⁤桷捩⁨敲畴湲⁳污⁬慤慴敳獴映牯愠汬愠瑵汯慯敤獲瀠敲敳瑮椠⁮桴⁥牰捯獥⹳朠瑥慒䑷瑡⁡湯祬爠瑥牵獮琠敨映物瑳搠瑡獡瑥氠慯敤Ɽ眠楨档洠祡渠瑯戠⁥桷瑡礠畯攠灸捥⹴ ††‪牀瑥牵⁮牡慲孹੝††⨠䀠獰污⵭敲畴湲愠牲祡牻潯㩴愠牲祡湻浡㩥猠牴湩Ⱨ瀠敲瑴役敶獲潩㩮猠牴湩Ⱨ瘠牥楳湯›瑳楲杮‬敲敦敲据㩥猠牴湩籧畮汬‬祴数›瑳楲杮‬湩瑳污彬慰桴›瑳楲杮‬污慩敳㩳猠牴湩孧ⱝ搠癥›潢汯ⱽ瘠牥楳湯㩳愠牲祡猼牴湩Ⱨ愠牲祡灻敲瑴役敶獲潩㽮›瑳楲杮‬敶獲潩㽮›瑳楲杮‬敲敦敲据㽥›瑳楲杮湼汵ⱬ琠灹㽥›瑳楲杮‬湩瑳污彬慰桴㨿猠牴湩Ⱨ愠楬獡獥㨿猠牴湩孧ⱝ搠癥牟煥極敲敭瑮›潢汯‬敲汰捡摥㨿猠牴湩孧ⱝ瀠潲楶敤㽤›瑳楲杮嵛㹽੽††⨠ਯ††異汢捩猠慴楴⁣畦据楴湯朠瑥慒䑷瑡⡡਩††੻††††瑀楲杧牥敟牲牯✨敧剴睡慄慴漠汮⁹敲畴湲⁳桴⁥楦獲⁴慤慴敳⁴潬摡摥‬桷捩⁨慭⁹潮⁴敢眠慨⁴潹⁵硥数瑣‮獕⁥敧䅴汬慒䑷瑡⡡ 湩瑳慥⁤桷捩⁨敲畴湲⁳污⁬慤慴敳獴映牯愠汬愠瑵汯慯敤獲瀠敲敳瑮椠⁮桴⁥牰捯獥⹳Ⱗ䔠啟䕓归䕄剐䍅呁䑅㬩ਊ††††晩⠠畮汬㴠㴽猠汥㩦␺湩瑳污敬⥤笠 †††††⼠ 湯祬爠煥極敲琠敨椠獮慴汬摥瀮灨映汩⁥晩琠楨⁳楦敬椠⁳潬摡摥映潲⁭瑩⁳畤灭摥氠捯瑡潩Ɱ †††††⼠ 湡⁤潮⁴牦浯椠獴猠畯捲⁥潬慣楴湯椠⁮桴⁥潣灭獯牥振浯潰敳⁲慰正条ⱥ猠敥栠瑴獰⼺术瑩畨⹢潣⽭潣灭獯牥振浯潰敳⽲獩畳獥㤯㌹਷††††††晩⠠畳獢牴弨䑟剉彟‬㠭‬⤱℠㴽✠❃ ੻††††††††敳晬㨺椤獮慴汬摥㴠椠据畬敤张䑟剉彟⸠✠椯獮慴汬摥瀮灨㬧 †††††素攠獬⁥੻††††††††敳晬㨺椤獮慴汬摥㴠愠牲祡⤨਻††††††੽††††੽ †††爠瑥牵⁮敳晬㨺椤獮慴汬摥਻††੽ †⼠⨪ ††‪敒畴湲⁳桴⁥慲⁷慤慴漠⁦污⁬湩瑳污敬⹤桰⁰桷捩⁨牡⁥畣牲湥汴⁹潬摡摥映牯挠獵潴⁭浩汰浥湥慴楴湯ੳ††⨠ ††‪牀瑥牵⁮牡慲孹੝††⨠䀠獰污⵭敲畴湲氠獩㱴牡慲筹潲瑯›牡慲筹慮敭›瑳楲杮‬牰瑥祴癟牥楳湯›瑳楲杮‬敶獲潩㩮猠牴湩Ⱨ爠晥牥湥散›瑳楲杮湼汵ⱬ琠灹㩥猠牴湩Ⱨ椠獮慴汬灟瑡㩨猠牴湩Ⱨ愠楬獡獥›瑳楲杮嵛‬敤㩶戠潯絬‬敶獲潩獮›牡慲㱹瑳楲杮‬牡慲筹牰瑥祴癟牥楳湯㨿猠牴湩Ⱨ瘠牥楳湯㨿猠牴湩Ⱨ爠晥牥湥散㨿猠牴湩籧畮汬‬祴数㨿猠牴湩Ⱨ椠獮慴汬灟瑡㽨›瑳楲杮‬污慩敳㽳›瑳楲杮嵛‬敤彶敲畱物浥湥㩴戠潯ⱬ爠灥慬散㽤›瑳楲杮嵛‬牰癯摩摥㨿猠牴湩孧絝紾ਾ††⨠ਯ††異汢捩猠慴楴⁣畦据楴湯朠瑥汁剬睡慄慴⤨ †笠 †††爠瑥牵⁮敳晬㨺敧䥴獮慴汬摥⤨਻††੽ †⼠⨪ ††‪敌獴礠畯爠汥慯⁤桴⁥瑳瑡捩愠牲祡映潲⁭湡瑯敨⁲楦敬 ††ਪ††⨠吠楨⁳獩漠汮⁹獵晥汵映牯挠浯汰硥椠瑮来慲楴湯⁳湩眠楨档愠瀠潲敪瑣渠敥獤琠⁯獵੥††⨠琠楨⁳汣獡⁳畢⁴桴湥愠獬⁯敮摥⁳潴攠數畣整愠潮桴牥瀠潲敪瑣猧愠瑵汯慯敤⁲湩瀠潲散獳ਬ††⨠愠摮眠湡獴琠⁯湥畳敲戠瑯⁨牰橯捥獴栠癡⁥捡散獳琠⁯桴楥⁲敶獲潩⁮景椠獮慴汬摥瀮灨ਮ††⨠ ††‪⁁祴楰慣⁬慣敳眠畯摬戠⁥䡐啐楮ⱴ眠敨敲椠⁴潷汵⁤敮摥琠⁯慭敫猠牵⁥瑩爠慥獤愠汬 ††‪桴⁥慤慴椠⁴敮摥⁳牦浯琠楨⁳汣獡ⱳ琠敨⁮慣汬爠汥慯⡤ 楷桴 ††‪牠煥極敲␠坃⽄敶摮牯振浯潰敳⽲湩瑳污敬⹤桰恰⠠牯猠浩汩牡 獡椠灮瑵琠⁯慭敫猠牵੥††⨠琠敨瀠潲敪瑣椠⁮桷捩⁨瑩爠湵⁳慣⁮桴湥愠獬⁯獵⁥桴獩挠慬獳猠晡汥ⱹ眠瑩潨瑵 ††‪湩整晲牥湥散戠瑥敷湥倠偈湕瑩猧搠灥湥敤据敩⁳湡⁤桴⁥牰橯捥❴⁳敤数摮湥楣獥ਮ††⨠ ††‪灀牡浡†牡慲孹⁝搤瑡⁡⁁敶摮牯振浯潰敳⽲湩瑳污敬⹤桰⁰慤慴猠瑥 ††‪牀瑥牵⁮潶摩 ††ਪ††⨠䀠獰污⵭慰慲⁭牡慲筹潲瑯›牡慲筹慮敭›瑳楲杮‬牰瑥祴癟牥楳湯›瑳楲杮‬敶獲潩㩮猠牴湩Ⱨ爠晥牥湥散›瑳楲杮湼汵ⱬ琠灹㩥猠牴湩Ⱨ椠獮慴汬灟瑡㩨猠牴湩Ⱨ愠楬獡獥›瑳楲杮嵛‬敤㩶戠潯絬‬敶獲潩獮›牡慲㱹瑳楲杮‬牡慲筹牰瑥祴癟牥楳湯㨿猠牴湩Ⱨ瘠牥楳湯㨿猠牴湩Ⱨ爠晥牥湥散㨿猠牴湩籧畮汬‬祴数㨿猠牴湩Ⱨ椠獮慴汬灟瑡㽨›瑳楲杮‬污慩敳㽳›瑳楲杮嵛‬敤彶敲畱物浥湥㩴戠潯ⱬ爠灥慬散㽤›瑳楲杮嵛‬牰癯摩摥㨿猠牴湩孧絝紾␠慤慴 ††⼪ †瀠扵楬⁣瑳瑡捩映湵瑣潩⁮敲潬摡␨慤慴਩††੻††††敳晬㨺椤獮慴汬摥㴠␠慤慴਻††††敳晬㨺椤獮慴汬摥祂敖摮牯㴠愠牲祡⤨਻ †††⼠ 桷湥甠楳杮爠汥慯Ɽ眠⁥楤慳汢⁥桴⁥畤汰捩瑡⁥牰瑯捥楴湯琠⁯湥畳敲琠慨⁴敳晬㨺椤獮慴汬摥搠瑡⁡獩 †††⼠ 污慷獹爠瑥牵敮Ɽ戠瑵眠⁥慣湮瑯欠潮⁷桷瑥敨⁲瑩挠浯獥映潲⁭桴⁥湩瑳污敬⹤桰⁰湩张䑟剉彟漠⁲潮ⱴ †††⼠ 潳眠⁥慨敶琠⁯獡畳敭椠⁴潤獥渠瑯‬湡⁤桴瑡洠祡爠獥汵⁴湩搠灵楬慣整搠瑡⁡敢湩⁧敲畴湲摥眠敨⁮楬瑳湩੧††††⼯愠汬椠獮慴汬摥瀠捡慫敧⁳潦⁲硥浡汰੥††††敳晬㨺椤獮慴汬摥獉潌慣䑬物㴠映污敳਻††੽ †⼠⨪ ††‪牀瑥牵⁮瑳楲杮 ††⼪ †瀠楲慶整猠慴楴⁣畦据楴湯朠瑥敓晬楄⡲਩††੻††††晩⠠敳晬㨺猤汥䑦物㴠㴽渠汵⥬笠 †††††猠汥㩦␺敳晬楄⁲‽瑳瑲⡲彟䥄归ⱟ✠屜Ⱗ✠✯㬩 †††素ਊ††††敲畴湲猠汥㩦␺敳晬楄㭲 †素ਊ††⨯ਪ††⨠䀠敲畴湲愠牲祡嵛 ††‪灀慳浬爭瑥牵⁮楬瑳愼牲祡牻潯㩴愠牲祡湻浡㩥猠牴湩Ⱨ瀠敲瑴役敶獲潩㩮猠牴湩Ⱨ瘠牥楳湯›瑳楲杮‬敲敦敲据㩥猠牴湩籧畮汬‬祴数›瑳楲杮‬湩瑳污彬慰桴›瑳楲杮‬污慩敳㩳猠牴湩孧ⱝ搠癥›潢汯ⱽ瘠牥楳湯㩳愠牲祡猼牴湩Ⱨ愠牲祡灻敲瑴役敶獲潩㽮›瑳楲杮‬敶獲潩㽮›瑳楲杮‬敲敦敲据㽥›瑳楲杮湼汵ⱬ琠灹㽥›瑳楲杮‬湩瑳污彬慰桴㨿猠牴湩Ⱨ愠楬獡獥㨿猠牴湩孧ⱝ搠癥牟煥極敲敭瑮›潢汯‬敲汰捡摥㨿猠牴湩孧ⱝ瀠潲楶敤㽤›瑳楲杮嵛㹽㹽 ††⼪ †瀠楲慶整猠慴楴⁣畦据楴湯朠瑥湉瑳污敬⡤਩††੻††††晩⠠畮汬㴠㴽猠汥㩦␺慣䝮瑥敖摮牯⥳笠 †††††猠汥㩦␺慣䝮瑥敖摮牯⁳‽敭桴摯敟楸瑳⡳䌧浯潰敳屲畁潴潬摡䍜慬獳潌摡牥Ⱗ✠敧剴来獩整敲䱤慯敤獲⤧਻††††੽ †††␠湩瑳污敬⁤‽牡慲⡹㬩 †††␠潣楰摥潌慣䑬物㴠映污敳਻ †††椠⁦猨汥㩦␺慣䝮瑥敖摮牯⥳笠 †††††␠敳晬楄⁲‽敳晬㨺敧却汥䑦物⤨਻††††††潦敲捡⁨䌨慬獳潌摡牥㨺敧剴来獩整敲䱤慯敤獲⤨愠⁳瘤湥潤䑲物㴠‾氤慯敤⥲笠 †††††††␠敶摮牯楄⁲‽瑳瑲⡲瘤湥潤䑲物‬尧❜‬⼧⤧਻††††††††晩⠠獩敳⡴敳晬㨺椤獮慴汬摥祂敖摮牯⑛敶摮牯楄嵲⤩笠 †††††††††␠湩瑳污敬孤⁝‽敳晬㨺椤獮慴汬摥祂敖摮牯⑛敶摮牯楄嵲਻††††††††⁽汥敳晩⠠獩晟汩⡥瘤湥潤䑲物✮振浯潰敳⽲湩瑳污敬⹤桰❰⤩笠 †††††††††⼠⨪䀠慶⁲牡慲筹潲瑯›牡慲筹慮敭›瑳楲杮‬牰瑥祴癟牥楳湯›瑳楲杮‬敶獲潩㩮猠牴湩Ⱨ爠晥牥湥散›瑳楲杮湼汵ⱬ琠灹㩥猠牴湩Ⱨ椠獮慴汬灟瑡㩨猠牴湩Ⱨ愠楬獡獥›瑳楲杮嵛‬敤㩶戠潯絬‬敶獲潩獮›牡慲㱹瑳楲杮‬牡慲筹牰瑥祴癟牥楳湯㨿猠牴湩Ⱨ瘠牥楳湯㨿猠牴湩Ⱨ爠晥牥湥散㨿猠牴湩籧畮汬‬祴数㨿猠牴湩Ⱨ椠獮慴汬灟瑡㽨›瑳楲杮‬污慩敳㽳›瑳楲杮嵛‬敤彶敲畱物浥湥㩴戠潯ⱬ爠灥慬散㽤›瑳楲杮嵛‬牰癯摩摥㨿猠牴湩孧絝紾␠敲畱物摥⨠ਯ††††††††††爤煥極敲⁤‽敲畱物⁥瘤湥潤䑲物✮振浯潰敳⽲湩瑳污敬⹤桰❰਻††††††††††敳晬㨺椤獮慴汬摥祂敖摮牯⑛敶摮牯楄嵲㴠␠敲畱物摥਻††††††††††椤獮慴汬摥嵛㴠␠敲畱物摥਻††††††††††晩⠠敳晬㨺椤獮慴汬摥㴠㴽渠汵⁬☦␠敶摮牯楄⹲⼧潣灭獯牥‧㴽‽猤汥䑦物 ੻††††††††††††敳晬㨺椤獮慴汬摥㴠␠敲畱物摥਻††††††††††††敳晬㨺椤獮慴汬摥獉潌慣䑬物㴠琠畲㭥 †††††††††素 †††††††素 †††††††椠⁦猨汥㩦␺湩瑳污敬䥤䱳捯污楄⁲☦␠敶摮牯楄⹲⼧潣灭獯牥‧㴽‽猤汥䑦物 ੻††††††††††挤灯敩䱤捯污楄⁲‽牴敵਻††††††††੽††††††੽††††੽ †††椠⁦渨汵⁬㴽‽敳晬㨺椤獮慴汬摥 ੻††††††⼯漠汮⁹敲畱物⁥桴⁥湩瑳污敬⹤桰⁰楦敬椠⁦桴獩映汩⁥獩氠慯敤⁤牦浯椠獴搠浵数⁤潬慣楴湯ਬ††††††⼯愠摮渠瑯映潲⁭瑩⁳潳牵散氠捯瑡潩⁮湩琠敨挠浯潰敳⽲潣灭獯牥瀠捡慫敧‬敳⁥瑨灴㩳⼯楧桴扵挮浯振浯潰敳⽲潣灭獯牥椯獳敵⽳㤹㜳 †††††椠⁦猨扵瑳⡲彟䥄归ⱟⴠⰸㄠ 㴡‽䌧⤧笠 †††††††⼠⨪䀠慶⁲牡慲筹潲瑯›牡慲筹慮敭›瑳楲杮‬牰瑥祴癟牥楳湯›瑳楲杮‬敶獲潩㩮猠牴湩Ⱨ爠晥牥湥散›瑳楲杮湼汵ⱬ琠灹㩥猠牴湩Ⱨ椠獮慴汬灟瑡㩨猠牴湩Ⱨ愠楬獡獥›瑳楲杮嵛‬敤㩶戠潯絬‬敶獲潩獮›牡慲㱹瑳楲杮‬牡慲筹牰瑥祴癟牥楳湯㨿猠牴湩Ⱨ瘠牥楳湯㨿猠牴湩Ⱨ爠晥牥湥散㨿猠牴湩籧畮汬‬祴数㨿猠牴湩Ⱨ椠獮慴汬灟瑡㽨›瑳楲杮‬污慩敳㽳›瑳楲杮嵛‬敤彶敲畱物浥湥㩴戠潯ⱬ爠灥慬散㽤›瑳楲杮嵛‬牰癯摩摥㨿猠牴湩孧絝紾␠敲畱物摥⨠ਯ††††††††爤煥極敲⁤‽敲畱物⁥彟䥄归 ‮⼧湩瑳污敬⹤桰❰਻††††††††敳晬㨺椤獮慴汬摥㴠␠敲畱物摥਻††††††⁽汥敳笠 †††††††猠汥㩦␺湩瑳污敬⁤‽牡慲⡹㬩 †††††素 †††素ਊ††††晩⠠敳晬㨺椤獮慴汬摥℠㴽愠牲祡⤨☠…␡潣楰摥潌慣䑬物 ੻††††††椤獮慴汬摥嵛㴠猠汥㩦␺湩瑳污敬㭤 †††素ਊ††††敲畴湲␠湩瑳污敬㭤 †素紊
+<?php
+
+/*
+ * This file is part of Composer.
+ *
+ * (c) Nils Adermann <naderman@naderman.de>
+ *     Jordi Boggiano <j.boggiano@seld.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Composer;
+
+use Composer\Autoload\ClassLoader;
+use Composer\Semver\VersionParser;
+
+/**
+ * This class is copied in every Composer installed project and available to all
+ *
+ * See also https://getcomposer.org/doc/07-runtime.md#installed-versions
+ *
+ * To require its presence, you can require `composer-runtime-api ^2.0`
+ *
+ * @final
+ */
+class InstalledVersions
+{
+    /**
+     * @var string|null if set (by reflection by Composer), this should be set to the path where this class is being copied to
+     * @internal
+     */
+    private static $selfDir = null;
+
+    /**
+     * @var mixed[]|null
+     * @psalm-var array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>}|array{}|null
+     */
+    private static $installed;
+
+    /**
+     * @var bool
+     */
+    private static $installedIsLocalDir;
+
+    /**
+     * @var bool|null
+     */
+    private static $canGetVendors;
+
+    /**
+     * @var array[]
+     * @psalm-var array<string, array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>}>
+     */
+    private static $installedByVendor = array();
+
+    /**
+     * Returns a list of all package names which are present, either by being installed, replaced or provided
+     *
+     * @return string[]
+     * @psalm-return list<string>
+     */
+    public static function getInstalledPackages()
+    {
+        $packages = array();
+        foreach (self::getInstalled() as $installed) {
+            $packages[] = array_keys($installed['versions']);
+        }
+
+        if (1 === \count($packages)) {
+            return $packages[0];
+        }
+
+        return array_keys(array_flip(\call_user_func_array('array_merge', $packages)));
+    }
+
+    /**
+     * Returns a list of all package names with a specific type e.g. 'library'
+     *
+     * @param  string   $type
+     * @return string[]
+     * @psalm-return list<string>
+     */
+    public static function getInstalledPackagesByType($type)
+    {
+        $packagesByType = array();
+
+        foreach (self::getInstalled() as $installed) {
+            foreach ($installed['versions'] as $name => $package) {
+                if (isset($package['type']) && $package['type'] === $type) {
+                    $packagesByType[] = $name;
+                }
+            }
+        }
+
+        return $packagesByType;
+    }
+
+    /**
+     * Checks whether the given package is installed
+     *
+     * This also returns true if the package name is provided or replaced by another package
+     *
+     * @param  string $packageName
+     * @param  bool   $includeDevRequirements
+     * @return bool
+     */
+    public static function isInstalled($packageName, $includeDevRequirements = true)
+    {
+        foreach (self::getInstalled() as $installed) {
+            if (isset($installed['versions'][$packageName])) {
+                return $includeDevRequirements || !isset($installed['versions'][$packageName]['dev_requirement']) || $installed['versions'][$packageName]['dev_requirement'] === false;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Checks whether the given package satisfies a version constraint
+     *
+     * e.g. If you want to know whether version 2.3+ of package foo/bar is installed, you would call:
+     *
+     *   Composer\InstalledVersions::satisfies(new VersionParser, 'foo/bar', '^2.3')
+     *
+     * @param  VersionParser $parser      Install composer/semver to have access to this class and functionality
+     * @param  string        $packageName
+     * @param  string|null   $constraint  A version constraint to check for, if you pass one you have to make sure composer/semver is required by your package
+     * @return bool
+     */
+    public static function satisfies(VersionParser $parser, $packageName, $constraint)
+    {
+        $constraint = $parser->parseConstraints((string) $constraint);
+        $provided = $parser->parseConstraints(self::getVersionRanges($packageName));
+
+        return $provided->matches($constraint);
+    }
+
+    /**
+     * Returns a version constraint representing all the range(s) which are installed for a given package
+     *
+     * It is easier to use this via isInstalled() with the $constraint argument if you need to check
+     * whether a given version of a package is installed, and not just whether it exists
+     *
+     * @param  string $packageName
+     * @return string Version constraint usable with composer/semver
+     */
+    public static function getVersionRanges($packageName)
+    {
+        foreach (self::getInstalled() as $installed) {
+            if (!isset($installed['versions'][$packageName])) {
+                continue;
+            }
+
+            $ranges = array();
+            if (isset($installed['versions'][$packageName]['pretty_version'])) {
+                $ranges[] = $installed['versions'][$packageName]['pretty_version'];
+            }
+            if (array_key_exists('aliases', $installed['versions'][$packageName])) {
+                $ranges = array_merge($ranges, $installed['versions'][$packageName]['aliases']);
+            }
+            if (array_key_exists('replaced', $installed['versions'][$packageName])) {
+                $ranges = array_merge($ranges, $installed['versions'][$packageName]['replaced']);
+            }
+            if (array_key_exists('provided', $installed['versions'][$packageName])) {
+                $ranges = array_merge($ranges, $installed['versions'][$packageName]['provided']);
+            }
+
+            return implode(' || ', $ranges);
+        }
+
+        throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+    }
+
+    /**
+     * @param  string      $packageName
+     * @return string|null If the package is being replaced or provided but is not really installed, null will be returned as version, use satisfies or getVersionRanges if you need to know if a given version is present
+     */
+    public static function getVersion($packageName)
+    {
+        foreach (self::getInstalled() as $installed) {
+            if (!isset($installed['versions'][$packageName])) {
+                continue;
+            }
+
+            if (!isset($installed['versions'][$packageName]['version'])) {
+                return null;
+            }
+
+            return $installed['versions'][$packageName]['version'];
+        }
+
+        throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+    }
+
+    /**
+     * @param  string      $packageName
+     * @return string|null If the package is being replaced or provided but is not really installed, null will be returned as version, use satisfies or getVersionRanges if you need to know if a given version is present
+     */
+    public static function getPrettyVersion($packageName)
+    {
+        foreach (self::getInstalled() as $installed) {
+            if (!isset($installed['versions'][$packageName])) {
+                continue;
+            }
+
+            if (!isset($installed['versions'][$packageName]['pretty_version'])) {
+                return null;
+            }
+
+            return $installed['versions'][$packageName]['pretty_version'];
+        }
+
+        throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+    }
+
+    /**
+     * @param  string      $packageName
+     * @return string|null If the package is being replaced or provided but is not really installed, null will be returned as reference
+     */
+    public static function getReference($packageName)
+    {
+        foreach (self::getInstalled() as $installed) {
+            if (!isset($installed['versions'][$packageName])) {
+                continue;
+            }
+
+            if (!isset($installed['versions'][$packageName]['reference'])) {
+                return null;
+            }
+
+            return $installed['versions'][$packageName]['reference'];
+        }
+
+        throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+    }
+
+    /**
+     * @param  string      $packageName
+     * @return string|null If the package is being replaced or provided but is not really installed, null will be returned as install path. Packages of type metapackages also have a null install path.
+     */
+    public static function getInstallPath($packageName)
+    {
+        foreach (self::getInstalled() as $installed) {
+            if (!isset($installed['versions'][$packageName])) {
+                continue;
+            }
+
+            return isset($installed['versions'][$packageName]['install_path']) ? $installed['versions'][$packageName]['install_path'] : null;
+        }
+
+        throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+    }
+
+    /**
+     * @return array
+     * @psalm-return array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}
+     */
+    public static function getRootPackage()
+    {
+        $installed = self::getInstalled();
+
+        return $installed[0]['root'];
+    }
+
+    /**
+     * Returns the raw installed.php data for custom implementations
+     *
+     * @deprecated Use getAllRawData() instead which returns all datasets for all autoloaders present in the process. getRawData only returns the first dataset loaded, which may not be what you expect.
+     * @return array[]
+     * @psalm-return array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>}
+     */
+    public static function getRawData()
+    {
+        @trigger_error('getRawData only returns the first dataset loaded, which may not be what you expect. Use getAllRawData() instead which returns all datasets for all autoloaders present in the process.', E_USER_DEPRECATED);
+
+        if (null === self::$installed) {
+            // only require the installed.php file if this file is loaded from its dumped location,
+            // and not from its source location in the composer/composer package, see https://github.com/composer/composer/issues/9937
+            if (substr(__DIR__, -8, 1) !== 'C') {
+                self::$installed = include __DIR__ . '/installed.php';
+            } else {
+                self::$installed = array();
+            }
+        }
+
+        return self::$installed;
+    }
+
+    /**
+     * Returns the raw data of all installed.php which are currently loaded for custom implementations
+     *
+     * @return array[]
+     * @psalm-return list<array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>}>
+     */
+    public static function getAllRawData()
+    {
+        return self::getInstalled();
+    }
+
+    /**
+     * Lets you reload the static array from another file
+     *
+     * This is only useful for complex integrations in which a project needs to use
+     * this class but then also needs to execute another project's autoloader in process,
+     * and wants to ensure both projects have access to their version of installed.php.
+     *
+     * A typical case would be PHPUnit, where it would need to make sure it reads all
+     * the data it needs from this class, then call reload() with
+     * `require $CWD/vendor/composer/installed.php` (or similar) as input to make sure
+     * the project in which it runs can then also use this class safely, without
+     * interference between PHPUnit's dependencies and the project's dependencies.
+     *
+     * @param  array[] $data A vendor/composer/installed.php data set
+     * @return void
+     *
+     * @psalm-param array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>} $data
+     */
+    public static function reload($data)
+    {
+        self::$installed = $data;
+        self::$installedByVendor = array();
+
+        // when using reload, we disable the duplicate protection to ensure that self::$installed data is
+        // always returned, but we cannot know whether it comes from the installed.php in __DIR__ or not,
+        // so we have to assume it does not, and that may result in duplicate data being returned when listing
+        // all installed packages for example
+        self::$installedIsLocalDir = false;
+    }
+
+    /**
+     * @return string
+     */
+    private static function getSelfDir()
+    {
+        if (self::$selfDir === null) {
+            self::$selfDir = strtr(__DIR__, '\\', '/');
+        }
+
+        return self::$selfDir;
+    }
+
+    /**
+     * @return array[]
+     * @psalm-return list<array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>}>
+     */
+    private static function getInstalled()
+    {
+        if (null === self::$canGetVendors) {
+            self::$canGetVendors = method_exists('Composer\Autoload\ClassLoader', 'getRegisteredLoaders');
+        }
+
+        $installed = array();
+        $copiedLocalDir = false;
+
+        if (self::$canGetVendors) {
+            $selfDir = self::getSelfDir();
+            foreach (ClassLoader::getRegisteredLoaders() as $vendorDir => $loader) {
+                $vendorDir = strtr($vendorDir, '\\', '/');
+                if (isset(self::$installedByVendor[$vendorDir])) {
+                    $installed[] = self::$installedByVendor[$vendorDir];
+                } elseif (is_file($vendorDir.'/composer/installed.php')) {
+                    /** @var array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>} $required */
+                    $required = require $vendorDir.'/composer/installed.php';
+                    self::$installedByVendor[$vendorDir] = $required;
+                    $installed[] = $required;
+                    if (self::$installed === null && $vendorDir.'/composer' === $selfDir) {
+                        self::$installed = $required;
+                        self::$installedIsLocalDir = true;
+                    }
+                }
+                if (self::$installedIsLocalDir && $vendorDir.'/composer' === $selfDir) {
+                    $copiedLocalDir = true;
+                }
+            }
+        }
+
+        if (null === self::$installed) {
+            // only require the installed.php file if this file is loaded from its dumped location,
+            // and not from its source location in the composer/composer package, see https://github.com/composer/composer/issues/9937
+            if (substr(__DIR__, -8, 1) !== 'C') {
+                /** @var array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>} $required */
+                $required = require __DIR__ . '/installed.php';
+                self::$installed = $required;
+            } else {
+                self::$installed = array();
+            }
+        }
+
+        if (self::$installed !== array() && !$copiedLocalDir) {
+            $installed[] = self::$installed;
+        }
+
+        return $installed;
+    }
+}
