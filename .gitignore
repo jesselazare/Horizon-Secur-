@@ -1,0 +1,5 @@
+# Horizon-Secur
+
+backend/.env
+backend/vendor/
+backend/storage/logs/*.log
