@@ -6,6 +6,7 @@ namespace App\Modules\Utilisateur\Services;
 
 use App\Core\Response;
 use App\Modules\Utilisateur\Repositories\UtilisateurRepository;
+use App\Modules\Utilisateur\Models\Utilisateur;
 
 final class UtilisateurService
 {

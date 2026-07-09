@@ -62,7 +62,7 @@ use PDO;
     public function create(string $nom, string $email, string $hashedPassword, ?string $telephone): int
     {
         $stmt = $this->db->prepare(
-            "INSERT INTO client (nom, email, mot_de_passe, telephone, date_inscription, statut_compte)
+            "INSERT INTO utilisateur (nom, email, password, telephone, date_inscription, statut_compte)
              VALUES (:nom, :email, :password, :telephone, NOW(), 'actif')"
         );
         $stmt->execute([

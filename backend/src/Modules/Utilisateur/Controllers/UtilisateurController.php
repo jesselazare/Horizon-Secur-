@@ -22,7 +22,6 @@ class UtilisateurController extends Controller
     public function inscription(): void
     {
         $input = $this->input();
-
         try {
             $utilisateur = $this->service->inscrire($input);
             Response::json([
