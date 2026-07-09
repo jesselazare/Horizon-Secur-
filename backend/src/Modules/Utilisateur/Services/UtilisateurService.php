@@ -102,9 +102,9 @@ final class UtilisateurService
     }
 
   
-    public function getProfil(int $clientId): Utilisateur
+    public function getProfil(int $Id): Utilisateur
     {
-        $utilisateur = $this->repository->findById($clientId);
+        $utilisateur = $this->repository->findById($Id);
 
         if ($utilisateur === null) {
             throw new \RuntimeException('Utilisateur introuvable.');
@@ -113,10 +113,12 @@ final class UtilisateurService
         return $utilisateur;
     }
 
-    public function modifierProfil(int $clientId, array $data): Utilisateur
+    public function modifierProfil(int $Id, array $data): Utilisateur
     {
         $nom       = trim($data['nom'] ?? '');
+        $prenom     = trim($data['prenom'] ?? '');
         $email     = trim($data['email'] ?? '');
+        $adresse     = trim($data['adresse'] ?? '');
         $telephone = trim($data['telephone'] ?? '') ?: null;
 
         if (empty($nom) || empty($email)) {
@@ -127,13 +129,13 @@ final class UtilisateurService
             throw new \InvalidArgumentException('Adresse email invalide.');
         }
 
-        if ($this->repository->emailExists($email, $clientId)) {
+        if ($this->repository->emailExists($email, $Id)) {
             throw new \InvalidArgumentException('Cette adresse email est déjà utilisée.');
         }
 
-        $this->repository->updateProfil($clientId, $nom, $email, $telephone);
+        $this->repository->updateProfil($Id, $nom,$prenom, $email, $adresse, $telephone);
 
-        $utilisateur = $this->repository->findById($clientId);
+        $utilisateur = $this->repository->findById($Id);
 
         if ($utilisateur === null) {
             throw new \RuntimeException('Erreur lors de la mise à jour du profil.');
@@ -142,9 +144,9 @@ final class UtilisateurService
         return $utilisateur;
     }
 
-    public function modifierMotDePasse(int $clientId, string $ancienPassword, string $nouveauPassword): void
+    public function modifierMotDePasse(int $Id, string $ancienPassword, string $nouveauPassword): void
     {
-        $utilisateur = $this->repository->findById($clientId);
+        $utilisateur = $this->repository->findById($Id);
 
         if ($utilisateur === null) {
             throw new \RuntimeException('Utilisateur introuvable.');
@@ -159,12 +161,12 @@ final class UtilisateurService
         }
 
         $hashed = password_hash($nouveauPassword, PASSWORD_BCRYPT);
-        $this->repository->updatePassword($clientId, $hashed);
+        $this->repository->updatePassword($Id, $hashed);
     }
 
-    public function supprimerCompte(int $clientId, string $password): void
+    public function supprimerCompte(int $Id, string $password): void
     {
-        $utilisateur = $this->repository->findById($clientId);
+        $utilisateur = $this->repository->findById($Id);
 
         if ($utilisateur === null) {
             throw new \RuntimeException('Utilisateur introuvable.');
@@ -174,7 +176,7 @@ final class UtilisateurService
             throw new \InvalidArgumentException('Mot de passe incorrect. Suppression annulée.');
         }
 
-        $this->repository->delete($clientId);
+        $this->repository->delete($Id);
         $this->deconnecter();
     }
 

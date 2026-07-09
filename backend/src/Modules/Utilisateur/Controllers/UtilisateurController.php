@@ -12,7 +12,6 @@ use PDOException;
 class UtilisateurController extends Controller
 {
     private UtilisateurService $service;
-
     public function __construct()
     {
         $this->service = new UtilisateurService();
@@ -40,7 +39,7 @@ class UtilisateurController extends Controller
     {
         $input    = $this->input();
         $email    = $input['email'] ?? '';
-        $password = $input['mot_de_passe'] ?? '';
+        $password = $input['password'] ?? '';
 
         try {
             $utilisateur = $this->service->connecter($email, $password);
@@ -66,10 +65,10 @@ class UtilisateurController extends Controller
    
     public function profil(): void
     {
-        $clientId = $this->requireAuth();
+        $Id = $this->requireAuth();
 
         try {
-            $utilisateur = $this->service->getProfil($clientId);
+            $utilisateur = $this->service->getProfil($Id);
             Response::json(['utilisateur' => $utilisateur->toPublicArray()]);
         } catch (\RuntimeException $e) {
             Response::error($e->getMessage(), 404);
@@ -78,11 +77,11 @@ class UtilisateurController extends Controller
 
     public function modifierProfil(): void
     {
-        $clientId = $this->requireAuth();
+        $Id = $this->requireAuth();
         $input    = $this->input();
 
         try {
-            $utilisateur = $this->service->modifierProfil($clientId, $input);
+            $utilisateur = $this->service->modifierProfil($Id, $input);
             Response::json([
                 'message'     => 'Profil mis à jour avec succès.',
                 'utilisateur' => $utilisateur->toPublicArray(),
@@ -97,7 +96,7 @@ class UtilisateurController extends Controller
 
     public function modifierMotDePasse(): void
     {
-        $clientId = $this->requireAuth();
+        $Id = $this->requireAuth();
         $input    = $this->input();
 
         $ancien  = $input['ancien_mot_de_passe'] ?? '';
@@ -110,7 +109,7 @@ class UtilisateurController extends Controller
         }
 
         try {
-            $this->service->modifierMotDePasse($clientId, $ancien, $nouveau);
+            $this->service->modifierMotDePasse($Id, $ancien, $nouveau);
             Response::json(['message' => 'Mot de passe mis à jour avec succès.']);
         } catch (\InvalidArgumentException $e) {
             Response::error($e->getMessage(), 422);
@@ -122,7 +121,7 @@ class UtilisateurController extends Controller
 
     public function supprimerCompte(): void
     {
-        $clientId = $this->requireAuth();
+        $Id = $this->requireAuth();
         $input    = $this->input();
         $password = $input['mot_de_passe'] ?? '';
 
@@ -133,7 +132,7 @@ class UtilisateurController extends Controller
         }
 
         try {
-            $this->service->supprimerCompte($clientId, $password);
+            $this->service->supprimerCompte($Id, $password);
             Response::json(['message' => 'Compte supprimé définitivement.']);
         } catch (\InvalidArgumentException $e) {
             Response::error($e->getMessage(), 422);
@@ -147,13 +146,13 @@ class UtilisateurController extends Controller
     
     private function requireAuth(): int
     {
-        $clientId = $this->service->getSessionClientId();
+        $Id = $this->service->getSessionId();
 
-        if ($clientId === null) {
+        if ($Id === null) {
             Response::error('Non authentifié. Veuillez vous connecter.', 401);
             exit; // sécurité supplémentaire
         }
 
-        return $clientId;
+        return $Id;
     }
 }
