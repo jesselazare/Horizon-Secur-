@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Modules\Utilisateur;
+namespace App\Modules\Utilisateur\Repositories;
 
 use App\Core\Database;
+use App\Modules\Utilisateur\Models\Utilisateur;
 use PDO;
 
-class UtilisateurRepository
+ final class UtilisateurRepository
 {
     private PDO $db;
 

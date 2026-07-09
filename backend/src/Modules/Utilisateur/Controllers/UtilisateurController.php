@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Modules\Utilisateur;
+namespace App\Modules\Utilisateur\Controllers;
 
 use App\Core\Controller;
 use App\Core\Response;
+use App\Modules\Utilisateur\Services\UtilisateurService;
+use PDOException;
 
 class UtilisateurController extends Controller
 {

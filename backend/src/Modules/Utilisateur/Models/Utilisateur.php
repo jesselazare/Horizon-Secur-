@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Modules\Utilisateur;
+namespace App\Modules\Utilisateur\Models;
 
-class Utilisateur
+final class Utilisateur
 {
     public function __construct(
         public readonly ?int    $id_client,

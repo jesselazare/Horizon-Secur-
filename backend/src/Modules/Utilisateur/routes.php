@@ -1,7 +1,7 @@
 <?php
+declare(strict_types=1);
 
-
-use App\Modules\Utilisateur\UtilisateurController;
+use App\Modules\Utilisateur\Controllers\UtilisateurController;
 
 $router->post('/api/utilisateurs/inscription', [UtilisateurController::class, 'inscription']);
 $router->post('/api/utilisateurs/connexion',   [UtilisateurController::class, 'connexion']);
