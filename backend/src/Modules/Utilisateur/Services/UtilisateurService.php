@@ -13,14 +13,7 @@ class UtilisateurService
         $this->repository = new UtilisateurRepository();
     }
 
-    // ── Inscription ───────────────────────────────────────────────────────────
 
-    /**
-     * Crée un nouveau compte client.
-     * RG-03 : la création de compte est proposée après chaque achat validé.
-     *
-     * @throws \InvalidArgumentException
-     */
     public function inscrire(array $data): Utilisateur
     {
         $nom       = trim($data['nom'] ?? '');
@@ -28,7 +21,6 @@ class UtilisateurService
         $password  = $data['mot_de_passe'] ?? '';
         $telephone = trim($data['telephone'] ?? '') ?: null;
 
-        // Validations
         if (empty($nom) || empty($email) || empty($password)) {
             throw new \InvalidArgumentException('Les champs nom, email et mot_de_passe sont obligatoires.');
         }
@@ -46,18 +38,19 @@ class UtilisateurService
         }
 
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
-        $id = $this->repository->create($nom, $email, $hashedPassword, $telephone);
+        $id             = $this->repository->create($nom, $email, $hashedPassword, $telephone);
 
-        return $this->repository->findById($id);
+     
+        $utilisateur = $this->repository->findById($id);
+
+        if ($utilisateur === null) {
+            throw new \RuntimeException('Erreur lors de la création du compte.');
+        }
+
+        return $utilisateur;
     }
 
-    // ── Connexion ─────────────────────────────────────────────────────────────
-
-    /**
-     * Authentifie un client et démarre sa session.
-     *
-     * @throws \InvalidArgumentException
-     */
+  
     public function connecter(string $email, string $password): Utilisateur
     {
         $email = trim($email);
@@ -66,12 +59,14 @@ class UtilisateurService
             throw new \InvalidArgumentException('Email et mot de passe requis.');
         }
 
+       
         $utilisateur = $this->repository->findByEmail($email);
 
-        if (!$utilisateur || !password_verify($password, $utilisateur->mot_de_passe)) {
+        if (!$utilisateur) {
             throw new \InvalidArgumentException('Email ou mot de passe incorrect.');
         }
 
+        // BUG CORRIGÉ : vérification statut avant password_verify
         if ($utilisateur->statut_compte === 'banni') {
             throw new \InvalidArgumentException('Ce compte a été suspendu.');
         }
@@ -80,13 +75,16 @@ class UtilisateurService
             throw new \InvalidArgumentException('Ce compte n\'existe plus.');
         }
 
-        // Démarrage session
+        if (!password_verify($password, $utilisateur->mot_de_passe)) {
+            throw new \InvalidArgumentException('Email ou mot de passe incorrect.');
+        }
+
         $this->startSession($utilisateur);
 
         return $utilisateur;
     }
 
-    // ── Déconnexion ───────────────────────────────────────────────────────────
+   
 
     public function deconnecter(): void
     {
@@ -97,32 +95,18 @@ class UtilisateurService
         session_destroy();
     }
 
-    // ── Profil ────────────────────────────────────────────────────────────────
-
-    /**
-     * Retourne le profil du client connecté.
-     * RG-04 : un client peut modifier ses informations depuis son espace compte.
-     *
-     * @throws \RuntimeException
-     */
+  
     public function getProfil(int $clientId): Utilisateur
     {
         $utilisateur = $this->repository->findById($clientId);
 
-        if (!$utilisateur) {
+        if ($utilisateur === null) {
             throw new \RuntimeException('Utilisateur introuvable.');
         }
 
         return $utilisateur;
     }
 
-    // ── Modification ──────────────────────────────────────────────────────────
-
-    /**
-     * Met à jour les informations personnelles du client.
-     *
-     * @throws \InvalidArgumentException|\RuntimeException
-     */
     public function modifierProfil(int $clientId, array $data): Utilisateur
     {
         $nom       = trim($data['nom'] ?? '');
@@ -143,19 +127,20 @@ class UtilisateurService
 
         $this->repository->updateProfil($clientId, $nom, $email, $telephone);
 
-        return $this->repository->findById($clientId);
+        $utilisateur = $this->repository->findById($clientId);
+
+        if ($utilisateur === null) {
+            throw new \RuntimeException('Erreur lors de la mise à jour du profil.');
+        }
+
+        return $utilisateur;
     }
 
-    /**
-     * Met à jour le mot de passe du client.
-     *
-     * @throws \InvalidArgumentException
-     */
     public function modifierMotDePasse(int $clientId, string $ancienPassword, string $nouveauPassword): void
     {
         $utilisateur = $this->repository->findById($clientId);
 
-        if (!$utilisateur) {
+        if ($utilisateur === null) {
             throw new \RuntimeException('Utilisateur introuvable.');
         }
 
@@ -171,19 +156,11 @@ class UtilisateurService
         $this->repository->updatePassword($clientId, $hashed);
     }
 
-    // ── Suppression ───────────────────────────────────────────────────────────
-
-    /**
-     * Supprime définitivement le compte du client.
-     * RG-05 : la suppression est définitive et efface toutes les données après confirmation.
-     *
-     * @throws \InvalidArgumentException|\RuntimeException
-     */
     public function supprimerCompte(int $clientId, string $password): void
     {
         $utilisateur = $this->repository->findById($clientId);
 
-        if (!$utilisateur) {
+        if ($utilisateur === null) {
             throw new \RuntimeException('Utilisateur introuvable.');
         }
 
@@ -195,15 +172,15 @@ class UtilisateurService
         $this->deconnecter();
     }
 
-    // ── Helpers ───────────────────────────────────────────────────────────────
+    
 
     private function startSession(Utilisateur $utilisateur): void
     {
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }
-        $_SESSION['client_id']  = $utilisateur->id_client;
-        $_SESSION['client_nom'] = $utilisateur->nom;
+        $_SESSION['client_id']    = $utilisateur->id_client;
+        $_SESSION['client_nom']   = $utilisateur->nom;
         $_SESSION['client_email'] = $utilisateur->email;
     }
 

@@ -16,18 +16,17 @@ class UtilisateurController extends Controller
         $this->service = new UtilisateurService();
     }
 
+   
     public function inscription(): void
     {
         $input = $this->input();
 
         try {
             $utilisateur = $this->service->inscrire($input);
-
             Response::json([
                 'message'     => 'Compte créé avec succès.',
                 'utilisateur' => $utilisateur->toPublicArray(),
             ], 201);
-
         } catch (\InvalidArgumentException $e) {
             Response::error($e->getMessage(), 422);
         } catch (\Throwable $e) {
@@ -35,6 +34,7 @@ class UtilisateurController extends Controller
         }
     }
 
+   
     public function connexion(): void
     {
         $input    = $this->input();
@@ -43,18 +43,17 @@ class UtilisateurController extends Controller
 
         try {
             $utilisateur = $this->service->connecter($email, $password);
-
             Response::json([
                 'message'     => 'Connexion réussie.',
                 'utilisateur' => $utilisateur->toPublicArray(),
             ]);
-
         } catch (\InvalidArgumentException $e) {
             Response::error($e->getMessage(), 401);
         } catch (\Throwable $e) {
             Response::error('Erreur serveur lors de la connexion.', 500);
         }
     }
+
 
     public function deconnexion(): void
     {
@@ -63,6 +62,7 @@ class UtilisateurController extends Controller
         Response::json(['message' => 'Déconnexion réussie.']);
     }
 
+   
     public function profil(): void
     {
         $clientId = $this->requireAuth();
@@ -70,7 +70,6 @@ class UtilisateurController extends Controller
         try {
             $utilisateur = $this->service->getProfil($clientId);
             Response::json(['utilisateur' => $utilisateur->toPublicArray()]);
-
         } catch (\RuntimeException $e) {
             Response::error($e->getMessage(), 404);
         }
@@ -83,18 +82,17 @@ class UtilisateurController extends Controller
 
         try {
             $utilisateur = $this->service->modifierProfil($clientId, $input);
-
             Response::json([
                 'message'     => 'Profil mis à jour avec succès.',
                 'utilisateur' => $utilisateur->toPublicArray(),
             ]);
-
         } catch (\InvalidArgumentException $e) {
             Response::error($e->getMessage(), 422);
         } catch (\Throwable $e) {
             Response::error('Erreur serveur lors de la mise à jour.', 500);
         }
     }
+
 
     public function modifierMotDePasse(): void
     {
@@ -104,14 +102,15 @@ class UtilisateurController extends Controller
         $ancien  = $input['ancien_mot_de_passe'] ?? '';
         $nouveau = $input['nouveau_mot_de_passe'] ?? '';
 
+       
         if (empty($ancien) || empty($nouveau)) {
             Response::error('Les deux mots de passe sont requis.', 422);
+            return;
         }
 
         try {
             $this->service->modifierMotDePasse($clientId, $ancien, $nouveau);
             Response::json(['message' => 'Mot de passe mis à jour avec succès.']);
-
         } catch (\InvalidArgumentException $e) {
             Response::error($e->getMessage(), 422);
         } catch (\Throwable $e) {
@@ -119,20 +118,22 @@ class UtilisateurController extends Controller
         }
     }
 
+
     public function supprimerCompte(): void
     {
         $clientId = $this->requireAuth();
         $input    = $this->input();
         $password = $input['mot_de_passe'] ?? '';
 
+       
         if (empty($password)) {
             Response::error('Le mot de passe est requis pour confirmer la suppression.', 422);
+            return;
         }
 
         try {
             $this->service->supprimerCompte($clientId, $password);
             Response::json(['message' => 'Compte supprimé définitivement.']);
-
         } catch (\InvalidArgumentException $e) {
             Response::error($e->getMessage(), 422);
         } catch (\RuntimeException $e) {
@@ -142,12 +143,14 @@ class UtilisateurController extends Controller
         }
     }
 
+    
     private function requireAuth(): int
     {
         $clientId = $this->service->getSessionClientId();
 
         if ($clientId === null) {
             Response::error('Non authentifié. Veuillez vous connecter.', 401);
+            exit; // sécurité supplémentaire
         }
 
         return $clientId;

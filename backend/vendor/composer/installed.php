@@ -3,7 +3,7 @@
         'name' => 'horizon-secur/api',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e3654a3f1ab77362d4af4f47ff53bd22dab8db95',
+        'reference' => 'f6fa0483188eaeed1d562ae0d25de6655933aea5',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'horizon-secur/api' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e3654a3f1ab77362d4af4f47ff53bd22dab8db95',
+            'reference' => 'f6fa0483188eaeed1d562ae0d25de6655933aea5',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -19,7 +19,10 @@ class UtilisateurRepository
     public function findById(int $id): ?Utilisateur
     {
         $stmt = $this->db->prepare(
-            "SELECT * FROM client WHERE id_client = :id AND statut_compte != 'banni' LIMIT 1"
+            "SELECT * FROM client
+             WHERE id_client = :id
+               AND statut_compte NOT IN ('banni', 'supprime')
+             LIMIT 1"
         );
         $stmt->execute(['id' => $id]);
         $row = $stmt->fetch();
@@ -44,8 +47,8 @@ class UtilisateurRepository
         $params = ['email' => $email];
 
         if ($excludeId !== null) {
-            $sql   .= " AND id_client != :id";
-            $params['id'] = $excludeId;
+            $sql           .= " AND id_client != :id";
+            $params['id']   = $excludeId;
         }
 
         $stmt = $this->db->prepare($sql);
@@ -53,6 +56,7 @@ class UtilisateurRepository
         return (int) $stmt->fetchColumn() > 0;
     }
 
+  
 
     public function create(string $nom, string $email, string $hashedPassword, ?string $telephone): int
     {
@@ -70,11 +74,13 @@ class UtilisateurRepository
         return (int) $this->db->lastInsertId();
     }
 
+// ── Mise à jour ───────────────────────────────────────────────────────────
 
     public function updateProfil(int $id, string $nom, string $email, ?string $telephone): bool
     {
         $stmt = $this->db->prepare(
-            "UPDATE client SET nom = :nom, email = :email, telephone = :telephone
+            "UPDATE client
+             SET nom = :nom, email = :email, telephone = :telephone
              WHERE id_client = :id"
         );
         return $stmt->execute([
@@ -96,6 +102,7 @@ class UtilisateurRepository
         ]);
     }
 
+  
 
     public function delete(int $id): bool
     {
