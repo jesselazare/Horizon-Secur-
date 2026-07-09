@@ -24,11 +24,11 @@ final class UtilisateurService
         $prenom     = trim($data['prenom'] ?? '');
         $email     = trim($data['email'] ?? '');
         $adresse     = trim($data['adresse'] ?? '');
-        $password  = $data['mot_de_passe'] ?? '';
+        $password  = $data['password'] ?? '';
         $telephone = trim($data['telephone'] ?? '') ?: null;
 
         if (empty($nom) || empty($email) || empty($password)) {
-            throw new \InvalidArgumentException('Les champs nom, email et mot_de_passe sont obligatoires.');
+            throw new \InvalidArgumentException('Les champs nom, email et password sont obligatoires.');
         }
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -44,7 +44,7 @@ final class UtilisateurService
         }
 
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
-        $id             = $this->repository->create($nom, $email, $hashedPassword, $telephone);
+        $id             = $this->repository->create($nom, $prenom, $email, $adresse, $hashedPassword, $telephone);
 
      
         $utilisateur = $this->repository->findById($id);
@@ -81,7 +81,7 @@ final class UtilisateurService
             throw new \InvalidArgumentException('Ce compte n\'existe plus.');
         }
 
-        if (!password_verify($password, $utilisateur->mot_de_passe)) {
+        if (!password_verify($password, $utilisateur->password)) {
             throw new \InvalidArgumentException('Email ou mot de passe incorrect.');
         }
 
@@ -150,7 +150,7 @@ final class UtilisateurService
             throw new \RuntimeException('Utilisateur introuvable.');
         }
 
-        if (!password_verify($ancienPassword, $utilisateur->mot_de_passe)) {
+        if (!password_verify($ancienPassword, $utilisateur->password)) {
             throw new \InvalidArgumentException('Ancien mot de passe incorrect.');
         }
 
@@ -185,9 +185,9 @@ final class UtilisateurService
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }
-        $_SESSION['client_id']    = $utilisateur->id_client;
-        $_SESSION['client_nom']   = $utilisateur->nom;
-        $_SESSION['client_email'] = $utilisateur->email;
+        $_SESSION['id']    = $utilisateur->id;
+        $_SESSION['nom']   = $utilisateur->nom;
+        $_SESSION['email'] = $utilisateur->email;
     }
 
     public function getSessionClientId(): ?int
@@ -195,7 +195,7 @@ final class UtilisateurService
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }
-        return isset($_SESSION['client_id']) ? (int) $_SESSION['client_id'] : null;
+        return isset($_SESSION['id']) ? (int) $_SESSION['id'] : null;
     }
 
     public function isConnecte(): bool
