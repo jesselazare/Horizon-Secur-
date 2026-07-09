@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Modules\Utilisateur\Services;
 
 use App\Core\Response;
-use App\Modules\Voyage\Repositories\UtilisateurRepository;
+use App\Modules\Utilisateur\Repositories\UtilisateurRepository;
 
 final class UtilisateurService
 {
