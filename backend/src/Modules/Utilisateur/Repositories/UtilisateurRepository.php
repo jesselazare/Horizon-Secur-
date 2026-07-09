@@ -20,9 +20,9 @@ use PDO;
     public function findById(int $id): ?Utilisateur
     {
         $stmt = $this->db->prepare(
-            "SELECT * FROM client
-             WHERE id_client = :id
-               AND statut_compte NOT IN ('banni', 'supprime')
+            "SELECT * FROM utilisateur
+             WHERE id = :id
+               AND statut NOT IN ('banni', 'supprime')
              LIMIT 1"
         );
         $stmt->execute(['id' => $id]);
@@ -34,7 +34,7 @@ use PDO;
     public function findByEmail(string $email): ?Utilisateur
     {
         $stmt = $this->db->prepare(
-            "SELECT * FROM client WHERE email = :email LIMIT 1"
+            "SELECT * FROM utilisateur WHERE email = :email LIMIT 1"
         );
         $stmt->execute(['email' => $email]);
         $row = $stmt->fetch();
@@ -44,11 +44,11 @@ use PDO;
 
     public function emailExists(string $email, ?int $excludeId = null): bool
     {
-        $sql    = "SELECT COUNT(*) FROM client WHERE email = :email";
+        $sql    = "SELECT COUNT(*) FROM utilisateur WHERE email = :email";
         $params = ['email' => $email];
 
         if ($excludeId !== null) {
-            $sql           .= " AND id_client != :id";
+            $sql           .= " AND id != :id";
             $params['id']   = $excludeId;
         }
 
@@ -59,15 +59,17 @@ use PDO;
 
   
 
-    public function create(string $nom, string $email, string $hashedPassword, ?string $telephone): int
+    public function create(string $nom, string $prenom, string $email, string $adresse, string $hashedPassword, ?string $telephone): int
     {
         $stmt = $this->db->prepare(
-            "INSERT INTO utilisateur (nom, email, password, telephone, date_inscription, statut_compte)
-             VALUES (:nom, :email, :password, :telephone, NOW(), 'actif')"
+            "INSERT INTO utilisateur (nom, prenom, email, adresse, password, telephone, date_inscription, statut)
+             VALUES (:nom, :prenom, :email, :adresse, :password, :telephone, NOW(), 'actif')"
         );
         $stmt->execute([
             'nom'       => $nom,
+            'prenom'    => $prenom, 
             'email'     => $email,
+            'adresse'   => $adresse,
             'password'  => $hashedPassword,
             'telephone' => $telephone,
         ]);
@@ -77,16 +79,18 @@ use PDO;
 
 // ── Mise à jour ───────────────────────────────────────────────────────────
 
-    public function updateProfil(int $id, string $nom, string $email, ?string $telephone): bool
+    public function updateProfil(int $id, string $nom, string $prenom, string $email, string $adresse, ?string $telephone): bool
     {
         $stmt = $this->db->prepare(
-            "UPDATE client
-             SET nom = :nom, email = :email, telephone = :telephone
-             WHERE id_client = :id"
+            "UPDATE utilisateur
+             SET nom = :nom, prenom = :prenom, email = :email, adresse = :adresse, telephone = :telephone
+             WHERE id = :id"
         );
         return $stmt->execute([
             'nom'       => $nom,
+            'prenom'    => $prenom, 
             'email'     => $email,
+            'adresse'   => $adresse,
             'telephone' => $telephone,
             'id'        => $id,
         ]);
@@ -95,7 +99,7 @@ use PDO;
     public function updatePassword(int $id, string $hashedPassword): bool
     {
         $stmt = $this->db->prepare(
-            "UPDATE client SET mot_de_passe = :password WHERE id_client = :id"
+            "UPDATE utilisateur SET mot_de_passe = :password WHERE id = :id"
         );
         return $stmt->execute([
             'password' => $hashedPassword,
@@ -108,7 +112,7 @@ use PDO;
     public function delete(int $id): bool
     {
         $stmt = $this->db->prepare(
-            "UPDATE client SET statut_compte = 'supprime' WHERE id_client = :id"
+            "UPDATE utilisateur SET statut = 'supprime' WHERE id = :id"
         );
         return $stmt->execute(['id' => $id]);
     }
