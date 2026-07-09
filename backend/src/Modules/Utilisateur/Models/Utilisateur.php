@@ -9,6 +9,7 @@ final class Utilisateur
     public function __construct(
         public readonly ?int    $id,
         public readonly string  $nom,
+        public readonly string  $prenom,
         public readonly string  $email,
         public readonly string  $password,
         public readonly ?string $adresse,
@@ -22,6 +23,7 @@ final class Utilisateur
         return new self(
             id:         isset($data['id']) ? (int) $data['id'] : null,
             nom:               $data['nom'],
+            prenom:            $data['prenom'],
             email:             $data['email'],
             password:      $data['mot_de_passe'],
             adresse:           $data['adresse'] ?? null,
