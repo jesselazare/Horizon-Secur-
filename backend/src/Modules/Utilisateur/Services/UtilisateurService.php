@@ -21,7 +21,9 @@ final class UtilisateurService
     public function inscrire(array $data): Utilisateur
     {
         $nom       = trim($data['nom'] ?? '');
+        $prenom     = trim($data['prenom'] ?? '');
         $email     = trim($data['email'] ?? '');
+        $adresse     = trim($data['adresse'] ?? '');
         $password  = $data['mot_de_passe'] ?? '';
         $telephone = trim($data['telephone'] ?? '') ?: null;
 
@@ -71,11 +73,11 @@ final class UtilisateurService
         }
 
         // BUG CORRIGÉ : vérification statut avant password_verify
-        if ($utilisateur->statut_compte === 'banni') {
+        if ($utilisateur->statut === 'banni') {
             throw new \InvalidArgumentException('Ce compte a été suspendu.');
         }
 
-        if ($utilisateur->statut_compte === 'supprime') {
+        if ($utilisateur->statut === 'supprime') {
             throw new \InvalidArgumentException('Ce compte n\'existe plus.');
         }
 

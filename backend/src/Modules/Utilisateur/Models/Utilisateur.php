@@ -7,37 +7,41 @@ namespace App\Modules\Utilisateur\Models;
 final class Utilisateur
 {
     public function __construct(
-        public readonly ?int    $id_client,
+        public readonly ?int    $id,
         public readonly string  $nom,
         public readonly string  $email,
-        public readonly string  $mot_de_passe,
+        public readonly string  $password,
+        public readonly ?string $adresse,
         public readonly ?string $telephone,
         public readonly ?string $date_inscription,
-        public readonly string  $statut_compte,
+        public readonly string  $statut,
     ) {}
 
     public static function fromArray(array $data): self
     {
         return new self(
-            id_client:         isset($data['id_client']) ? (int) $data['id_client'] : null,
+            id:         isset($data['id']) ? (int) $data['id'] : null,
             nom:               $data['nom'],
             email:             $data['email'],
-            mot_de_passe:      $data['mot_de_passe'],
+            password:      $data['mot_de_passe'],
+            adresse:           $data['adresse'] ?? null,
             telephone:         $data['telephone'] ?? null,
             date_inscription:  $data['date_inscription'] ?? null,
-            statut_compte:     $data['statut_compte'] ?? 'actif',
+            statut:     $data['statut'] ?? 'actif',
         );
     }
 
     public function toPublicArray(): array
     {
         return [
-            'id_client'        => $this->id_client,
+            'id'        => $this->id,
             'nom'              => $this->nom,
+            'prenom'           => $this->prenom,
             'email'            => $this->email,
+            'adresse'          => $this->adresse,
             'telephone'        => $this->telephone,
             'date_inscription' => $this->date_inscription,
-            'statut_compte'    => $this->statut_compte,
+            'statut'    => $this->statut,
         ];
     }
 }
